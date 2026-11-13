@@ -1,0 +1,11 @@
+{
+  "ccn": "412510",
+  "clinic": "Dialysis Center of Providence",
+  "date": "20261117",
+  "radius_m": 400,
+  "qualifying_stop_arrivals": 107,
+  "distinct_trips": 51,
+  "duplicate_arrivals_removed": 56,
+  "illustrated_trip": "4906893",
+  "illustrated_trip_arrivals": 3
+}

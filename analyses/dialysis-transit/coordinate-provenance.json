@@ -1,0 +1,14 @@
+{
+  "file": "data/raw/clinic-geocodes.csv",
+  "sha256": "cac24fbb54b5fb5c28d5248d6e953f2e68e37af9ae3e671af12d0dfa01a03167",
+  "upstream_retrieval_utc": null,
+  "upstream_retrieval_note": "Not supplied; do not substitute CMS/GTFS retrieval time",
+  "inspected_utc": "2026-11-13T16:04:26.799140+00:00",
+  "cms_rows": 16,
+  "coordinate_rows": 16,
+  "matched_one_to_one": true,
+  "missing_ccns": [],
+  "extra_ccns": [],
+  "duplicate_ccns": [],
+  "checks": "CCNs read as text; exact set equality; finite coordinates; RI boundary; normalized street and ZIP agreement"
+}

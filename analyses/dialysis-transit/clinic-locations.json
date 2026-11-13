@@ -1,0 +1,178 @@
+[
+  {
+    "ccn": "412501",
+    "address": "2814 Post Road, WARWICK, RI, 02886",
+    "latitude": 41.707982608524,
+    "longitude": -71.451177588719,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2814+Post+Road%2C+WARWICK%2C+RI+02886&benchmark=Public_AR_Current&format=json",
+    "matched_address": "2814 POST RD, WARWICK, RI, 02886",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412502",
+    "address": "One Rhody Drive, WESTERLY, RI, 02891",
+    "latitude": 41.361382811988,
+    "longitude": -71.823729166062,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1+Rhody+Drive%2C+WESTERLY%2C+RI+02891&benchmark=Public_AR_Current&format=json",
+    "matched_address": "1 RHODY DR, WESTERLY, RI, 02891",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412503",
+    "address": "2100 Diamond Hill Road, WOONSOCKET, RI, 02895",
+    "latitude": 42.014885682381,
+    "longitude": -71.468691941786,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2100+Diamond+Hill+Road%2C+WOONSOCKET%2C+RI+02895&benchmark=Public_AR_Current&format=json",
+    "matched_address": "2100 DIAMOND HILL RD, WOONSOCKET, RI, 02895",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412504",
+    "address": "1775 Bald Hill Road, WARWICK, RI, 02886",
+    "latitude": 41.689592113667,
+    "longitude": -71.500835698581,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1775+Bald+Hill+Road%2C+WARWICK%2C+RI+02886&benchmark=Public_AR_Current&format=json",
+    "matched_address": "1775 BALD HILL RD, WARWICK, RI, 02886",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412505",
+    "address": "125 Corliss Street, PROVIDENCE, RI, 02904",
+    "latitude": 41.841557099469,
+    "longitude": -71.412175690214,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=125+Corliss+Street%2C+PROVIDENCE%2C+RI+02904&benchmark=Public_AR_Current&format=json",
+    "matched_address": "125 CORLISS ST, PROVIDENCE, RI, 02904",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412506",
+    "address": "1635 Mineral Spring Ave., North Providence, RI, 02904",
+    "latitude": 41.863935893228,
+    "longitude": -71.450536962035,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1635+Mineral+Spring+Ave.%2C+North+Providence%2C+RI+02904&benchmark=Public_AR_Current&format=json",
+    "matched_address": "1635 MINERAL SPRING AVE, NORTH PROVIDENCE, RI, 02904",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412507",
+    "address": "10 High Street Suite C, Wakefield, RI, 02879",
+    "latitude": 41.437037367562,
+    "longitude": -71.501993179259,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10+High+Street%2C+Wakefield%2C+RI+02879&benchmark=Public_AR_Current&format=json",
+    "matched_address": "10 HIGH ST, WAKEFIELD, RI, 02879",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412508",
+    "address": "22 Hurst Lane, TIVERTON, RI, 02878",
+    "latitude": 41.661887318484,
+    "longitude": -71.152237062977,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=22+Hurst+Lane%2C+TIVERTON%2C+RI+02878&benchmark=Public_AR_Current&format=json",
+    "matched_address": "22 HURST LN, TIVERTON, RI, 02878",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412509",
+    "address": "201 Armistice Boulevard, PAWTUCKET, RI, 02860",
+    "latitude": 41.879972290956,
+    "longitude": -71.368470194189,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=201+Armistice+Boulevard%2C+PAWTUCKET%2C+RI+02860&benchmark=Public_AR_Current&format=json",
+    "matched_address": "201 ARMISTICE BLVD, PAWTUCKET, RI, 02860",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412510",
+    "address": "9 Plenty Street, PROVIDENCE, RI, 02907",
+    "latitude": 41.807300309865,
+    "longitude": -71.420500783569,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9+Plenty+Street%2C+PROVIDENCE%2C+RI+02907&benchmark=Public_AR_Current&format=json",
+    "matched_address": "9 PLENTY ST, PROVIDENCE, RI, 02907",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412511",
+    "address": "79 Division Street, PAWTUCKET, RI, 02860",
+    "latitude": 41.872628815462,
+    "longitude": -71.383542144939,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=79+Division+Street%2C+PAWTUCKET%2C+RI+02860&benchmark=Public_AR_Current&format=json",
+    "matched_address": "79 DIVISION ST, PAWTUCKET, RI, 02860",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412512",
+    "address": "318 Waterman Avenue, EAST PROVIDENCE, RI, 02914",
+    "latitude": 41.820536093555,
+    "longitude": -71.368513837461,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=318+Waterman+Avenue%2C+EAST+PROVIDENCE%2C+RI+02914&benchmark=Public_AR_Current&format=json",
+    "matched_address": "318 WATERMAN AVE, EAST PROVIDENCE, RI, 02914",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412514",
+    "address": "1526 Atwood Avenue, JOHNSTON, RI, 02919",
+    "latitude": 41.826888219189,
+    "longitude": -71.499947912925,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1526+Atwood+Avenue%2C+JOHNSTON%2C+RI+02919&benchmark=Public_AR_Current&format=json",
+    "matched_address": "1526 ATWOOD AVE, JOHNSTON, RI, 02919",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "412515",
+    "address": "622 George Washington Highway, LINCOLN, RI, 02865",
+    "latitude": 41.935389189342,
+    "longitude": -71.481119362935,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=622+George+Washington+Highway%2C+LINCOLN%2C+RI+02865&benchmark=Public_AR_Current&format=json",
+    "matched_address": "622 GEORGE WASHINGTON HWY, LINCOLN, RI, 02865",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "413500",
+    "address": "22 Baker Street, PROVIDENCE, RI, 02905",
+    "latitude": 41.793619694742,
+    "longitude": -71.398251010737,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=22+Baker+Street%2C+PROVIDENCE%2C+RI+02905&benchmark=Public_AR_Current&format=json",
+    "matched_address": "22 BAKER ST, PROVIDENCE, RI, 02905",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  },
+  {
+    "ccn": "413501",
+    "address": "950 Warren Avenue, Suite 101, EAST PROVIDENCE, RI, 02914",
+    "latitude": 41.807895754774,
+    "longitude": -71.345639178264,
+    "status": "Validated",
+    "validation_scope": "CCN, street/ZIP agreement and Rhode Island boundary; supplied coordinates accepted per user instruction",
+    "evidence": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=950+Warren+Avenue%2C+EAST+PROVIDENCE%2C+RI+02914&benchmark=Public_AR_Current&format=json",
+    "matched_address": "950 WARREN AVE, EAST PROVIDENCE, RI, 02914",
+    "precision": "Supplied Census street-address geocode; not a verified building entrance"
+  }
+]

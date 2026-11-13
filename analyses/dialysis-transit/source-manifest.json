@@ -1,0 +1,11 @@
+{
+  "retrieved_utc": "2026-11-13T15:35:22.158067+00:00",
+  "cms_catalog": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/23ew-n7w9",
+  "ripta_url": "https://ripta.com/RIPTA-GTFS.zip",
+  "sha256": {
+    "DF_Data_Dictionary.pdf": "0c94067658127fa3f701ffb9e7bd68a7503c84fd25717c58e3d67447aea64ed6",
+    "DFC_FACILITY_2.csv": "9b0232d73b8aa9628b51bc76b7246b8590daa0393ec9dfd3126171ce571469ed",
+    "cms-metadata.json": "b4ad4ec37e373db1547295e295ae476c32b652ce3ed932e6b4b4d803c57d39ef",
+    "RIPTA-GTFS.zip": "2aa2cd24209215c6a2b5d2d170527a555529af5fd58d5041713f35dbc2795f97"
+  }
+}
