@@ -1,2 +1,3 @@
 # White-Oak-Research
-An independent researcher identity for publicly available data analysis
+An independent researcher using AI-assisted development for publicly available data analysis.
+
