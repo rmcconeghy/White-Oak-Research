@@ -31,17 +31,32 @@ header{padding-top:22px;padding-bottom:22px}nav{gap:8px}nav a{padding:9px 17px;b
 .project-idea:nth-child(3) { background: #f4f0e7; }
 .project-idea:nth-child(4) { background: #eaf0f0; }
 
+/* Keep the complete research figure visible in the homepage tile. */
 .map-preview {
-  height: 155px;
+  height: auto;
+  aspect-ratio: 900 / 866;
   background: #f3f1e9;
 }
 .map-preview img {
   position: absolute;
-  width: 260%;
+  width: 213.333333%;
   max-width: none;
-  left: -47%;
-  top: 50%;
-  transform: translateY(-53%);
+  height: auto;
+  left: -47.777778%;
+  top: -5.196305%;
+  transform: none;
+}
+.project-tile .tile-body { padding: 14px 20px; }
+.project-tile .tile-body h2 {
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -.3px;
+  margin: 6px 0;
+}
+.project-tile .tile-body p {
+  font-size: 13px;
+  min-height: 0;
+  margin: 6px 0 12px;
 }
 .pcp-study figure { margin: 32px 0; }
 .pcp-study figure img { width: 100%; height: auto; display: block; }
@@ -63,4 +78,3 @@ header{padding-top:22px;padding-bottom:22px}nav{gap:8px}nav a{padding:9px 17px;b
   left: -47.777778%;
   top: -5.196305%;
 }
-.map-preview img { width: 213.333333%; left: -47.777778%; }
