@@ -10,3 +10,23 @@ figcaption{font-size:14px;margin-top:16px}table{border-collapse:collapse;width:1
 .study h2,.secondary h2{font:600 22px/1.35 'DM Sans',sans-serif;letter-spacing:-.03em;margin:0 0 16px}
 .links{display:flex;gap:12px;flex-wrap:wrap}.links a,.secondary summary{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;font:500 16px/1.4 'DM Sans',sans-serif;border:1px solid var(--outline);border-radius:var(--radius);background:var(--surface);cursor:pointer}.secondary{margin-top:32px}.secondary summary{display:list-item;width:fit-content}.catalog .project-tile{padding:0;border-radius:var(--radius);border:1px solid var(--outline)}.catalog .project-grid{max-width:840px;margin:auto}.catalog .secondary{max-width:840px;margin:32px auto}.reading>a,.study>a{ text-decoration:underline}.links a:hover{background:#e9ede3}
 @media(max-width:720px){.findings{grid-template-columns:1fr}.reading{padding-block:28px}footer{margin:0}.links{align-items:flex-start;flex-direction:column}}
+
+/* Writing shares the site spacing and adds a comfortable reading measure. */
+.essay article,.writing-index .essay-link { max-width:70ch; }
+.essay article p { font-size:18px; line-height:1.8; margin:24px 0; }
+.essay-link { display:block; padding:24px; border:1px solid var(--outline);
+  border-radius:var(--radius); background:var(--surface); }
+.essay-link h2 { margin:0; font:500 24px/1.4 'DM Sans',sans-serif; letter-spacing:-.4px; }
+.essay-link:hover { background:#e9ede3; }
+body header nav a[aria-current="page"] { background:var(--green); color:var(--paper); }
+@media (max-width:1000px) {
+ body:has(.catalog) header { grid-template-columns:1fr auto; }
+ body:has(.catalog) .header-title { grid-column:1/-1; grid-row:2; }
+}
+@media (max-width:650px) {
+ body header { display:flex; flex-wrap:wrap; gap:16px; }
+ body header nav { display:flex; flex-wrap:wrap; width:100%; gap:4px; }
+ body header nav a { padding:8px 12px; }
+ body:has(.catalog) header { display:flex; }
+ .essay article p { font-size:17px; line-height:1.75; }
+}
