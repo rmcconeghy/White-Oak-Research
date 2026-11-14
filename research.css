@@ -1,0 +1,12 @@
+/* Material-inspired outlined surfaces and a 4px spacing scale. */
+:root{--space:clamp(16px,3vw,32px);--outline:#c8d2c8;--surface:#fffefa;--radius:12px}
+header,footer{width:min(1080px,100%);padding:20px var(--space);margin-inline:auto}
+nav a[aria-current=page]{background:var(--green);color:white}
+.reading,.study,.catalog{margin:auto;padding:var(--space);width:min(1080px,100%)}
+.reading{padding-block:48px;min-height:58vh}.reading p,.study>section p,.lead{max-width:70ch}
+.reading h1,.study h1{font:normal clamp(34px,5vw,56px)/1.12 Georgia,serif;letter-spacing:-.035em;margin:20px 0}
+.findings{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin:24px 0}.findings>*{margin:0;background:var(--surface);border:1px solid var(--outline);border-radius:var(--radius);padding:var(--space);align-self:start}.findings svg{width:100%;display:block;max-height:540px}
+figcaption{font-size:14px;margin-top:16px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:8px 4px;text-align:left;border-bottom:1px solid var(--outline);vertical-align:top}td:not(:first-child),th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.study h2,.secondary h2{font:600 22px/1.35 'DM Sans',sans-serif;letter-spacing:-.03em;margin:0 0 16px}
+.links{display:flex;gap:12px;flex-wrap:wrap}.links a,.secondary summary{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;font:500 16px/1.4 'DM Sans',sans-serif;border:1px solid var(--outline);border-radius:var(--radius);background:var(--surface);cursor:pointer}.secondary{margin-top:32px}.secondary summary{display:list-item;width:fit-content}.catalog .project-tile{padding:0;border-radius:var(--radius);border:1px solid var(--outline)}.catalog .project-grid{max-width:840px;margin:auto}.catalog .secondary{max-width:840px;margin:32px auto}.reading>a,.study>a{ text-decoration:underline}.links a:hover{background:#e9ede3}
+@media(max-width:720px){.findings{grid-template-columns:1fr}.reading{padding-block:28px}footer{margin:0}.links{align-items:flex-start;flex-direction:column}}
