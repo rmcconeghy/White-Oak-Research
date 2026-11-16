@@ -1,0 +1,31 @@
+/* Writing only: shared by the generated index and permanent essay pages. */
+.reading.writing-index,.reading.essay {
+  width:min(100%, 760px);
+  padding:clamp(32px,6vw,64px) var(--space) clamp(48px,8vw,88px);
+}
+.writing-index article,.essay article { max-width:100%; }
+.writing-index .writing-label,.essay>a {
+  display:block;margin:0 0 24px;font-size:14px;color:var(--muted);
+}
+.writing-index article h1,.essay article h1 {
+  font-size:clamp(36px,6vw,56px);line-height:1.15;margin:0 0 16px;
+}
+.writing-index article p,.essay article p {
+  font-size:clamp(17px,2vw,19px);line-height:1.8;margin:24px 0;
+}
+.writing-index article .essay-meta,.essay article .essay-meta {
+  font-size:14px;line-height:1.5;color:var(--muted);margin:0 0 36px;
+}
+.writing-index article a,.essay article a,.writing-index .permalink,
+.previous-writing a { text-decoration:underline;text-underline-offset:4px; }
+.writing-index article img,.essay article img { max-width:100%;height:auto; }
+.writing-index article,.essay article { overflow-wrap:anywhere; }
+.writing-index article pre,.essay article pre { overflow-x:auto; }
+.writing-index .permalink { display:inline-block;font-size:14px;margin-top:8px; }
+.previous-writing { margin-top:56px;padding-top:28px;border-top:1px solid var(--line); }
+.previous-writing h2 { font:500 18px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:0;margin:0 0 20px; }
+.previous-writing ol { padding:0;margin:0;list-style:none; }
+.previous-writing li { margin:0 0 24px; }
+.previous-writing a { font-size:20px;line-height:1.4; }
+.previous-writing time { display:block;font-size:13px;color:var(--muted);margin-top:6px; }
+.previous-writing p { font-size:14px;color:var(--muted); }
