@@ -1,0 +1,27 @@
+/* Live text around the existing map; scoped to the primary-care presentation. */
+.catalog .pcp-preview { padding:clamp(20px,4vw,36px);background:var(--surface); }
+.pcp-heading h2 { font:normal clamp(32px,5vw,48px)/1.12 Georgia,serif;letter-spacing:-.035em;margin:10px 0 14px; }
+.pcp-heading p { margin:0;font-size:16px; }
+.pcp-preview .pcp-kicker { font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase; }
+.pcp-preview-grid { display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;margin-top:28px;align-items:center; }
+.pcp-map svg { width:100%;height:auto;display:block; }
+.pcp-legend { display:flex;align-items:center;gap:10px;margin:16px 0 0;font-size:12px; }
+.pcp-gradient { height:10px;flex:1;background:linear-gradient(90deg,#dce8e8,#afc5c9,#7699a3,#185168); }
+.pcp-map-note { font-size:12px;margin:6px 0;color:var(--muted); }
+.pcp-summary .pcp-stat { font:normal 48px/1.2 Georgia,serif;color:#185168;margin:6px 0 0; }
+.pcp-summary p { margin:0;font-size:13px; }
+.pcp-summary h3 { font:600 15px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:0;margin:24px 0 8px; }
+.pcp-summary dl { margin:0;font-size:14px; }
+.pcp-summary dl div { display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line); }
+.pcp-summary dt { font-weight:400; }
+.pcp-summary dd { margin:0;font-weight:600;font-variant-numeric:tabular-nums; }
+.pcp-preview-foot { margin:24px 0 0;font-size:12px;color:var(--muted); }
+.pcp-preview-foot span { display:inline-block;margin-top:8px;color:var(--green);font-size:14px; }
+.pcp-study-page .findings svg { max-height:none; }
+.pcp-study-page .findings figure { margin:0; }
+.pcp-study-page #methods h2 { font:600 24px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:-.4px; }
+@media(max-width:560px) {
+  .pcp-preview-grid { grid-template-columns:1fr;gap:24px; }
+  .pcp-map { max-width:320px;width:100%;margin:auto; }
+  .pcp-summary dl { font-size:15px; }
+}

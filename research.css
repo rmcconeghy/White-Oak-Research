@@ -30,3 +30,7 @@ body header nav a[aria-current="page"] { background:var(--green); color:var(--pa
  body:has(.catalog) header { display:flex; }
  .essay article p { font-size:17px; line-height:1.75; }
 }
+
+
+.about-contact { margin-top:48px;padding-top:28px;border-top:1px solid var(--line);max-width:70ch; }
+.about-contact h2 { font:500 24px/1.4 "DM Sans",Arial,sans-serif;letter-spacing:-.4px; }
