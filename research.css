@@ -34,3 +34,10 @@ body header nav a[aria-current="page"] { background:var(--green); color:var(--pa
 
 .about-contact { margin-top:48px;padding-top:28px;border-top:1px solid var(--line);max-width:70ch; }
 .about-contact h2 { font:500 24px/1.4 "DM Sans",Arial,sans-serif;letter-spacing:-.4px; }
+
+.portfolio-intro{max-width:840px;margin:0 auto 28px;font-size:17px;line-height:1.6;color:var(--muted)}
+.portfolio-intro a,.earlier-work li>a{text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
+.earlier-work ul{list-style:none;padding:0;margin:24px 0 0}
+.earlier-work li{margin:0 0 24px}.earlier-work li>a{font-weight:500}
+.earlier-work li p{margin:6px 0 0;font-size:15px;color:var(--muted);max-width:70ch}
+.study-question{max-width:70ch;font-size:16px;color:var(--muted);margin:24px 0 12px}
