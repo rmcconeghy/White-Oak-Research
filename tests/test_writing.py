@@ -15,7 +15,9 @@ class WritingTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        shutil.copytree(ROOT / 'writing', self.root / 'writing')
+        # Keep fixtures isolated from new publications: production essays are checked by the build.
+        (self.root / 'writing').mkdir()
+        shutil.copytree(ROOT / 'writing/why-write', self.root / 'writing/why-write')
         shutil.copytree(ROOT / 'scripts/templates', self.root / 'scripts/templates')
         self.original = (self.root / 'writing/why-write/index.html').read_text()
 
