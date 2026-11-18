@@ -26,7 +26,7 @@ class WritingTests(unittest.TestCase):
         parsed = writing.EssayParser(self.original)
         self.assertIn(self.original[parsed.start:parsed.end], output)
         self.assertIn('href="./why-write/"', output)
-        self.assertIn('This is the first essay.', output)
+        self.assertNotIn('Earlier writing', output)
         self.assertEqual((self.root / 'writing/why-write/index.html').read_text(), self.original)
         self.assertEqual(output, writing.build(self.root))
 
@@ -39,11 +39,30 @@ class WritingTests(unittest.TestCase):
         (directory / 'index.html').write_text(fixture)
         output = writing.build(self.root)
         self.assertIn('<h1>Temporary verification fixture</h1>', output)
-        self.assertNotIn('<h1>0. Why Write?</h1>', output)
-        self.assertIn('<li><a href="./why-write/">0. Why Write?</a>', output)
-        self.assertIn('<time datetime="2026-11-14">November 14, 2026</time></li>', output)
+        self.assertIn('<h1>0. Why Write?</h1>', output)
+        self.assertIn('href="./why-write/"', output)
+        self.assertNotIn('<h2 id="previous-writing">Earlier writing</h2>', output)
         shutil.rmtree(directory)
         self.assertEqual(writing.build(self.root), original_index)
+
+    def test_only_three_complete_essays_then_archive_links(self):
+        for n, d in [(1, '2026-11-15'), (2, '2026-11-16'), (3, '2026-11-17')]:
+            directory = self.root / f'writing/test-{n}'
+            directory.mkdir()
+            fixture = (self.original
+                       .replace('2026-11-14', d)
+                       .replace('November 14, 2026', 'November ' + str(14 + n) + ', 2026')
+                       .replace('0. Why Write?', f'Test essay {n}'))
+            (directory / 'index.html').write_text(fixture)
+        output = writing.build(self.root)
+        self.assertEqual(output.count('<section class="featured-essay">'), 3)
+        self.assertIn('<h1>Test essay 3</h1>', output)
+        self.assertIn('<h1>Test essay 2</h1>', output)
+        self.assertIn('<h1>Test essay 1</h1>', output)
+        self.assertNotIn('<h1>0. Why Write?</h1>', output)
+        self.assertIn('<li><a href="./why-write/">0. Why Write?</a>', output)
+        self.assertLess(output.index('<h1>Test essay 3</h1>'), output.index('<h1>Test essay 2</h1>'))
+        self.assertLess(output.index('<h1>Test essay 2</h1>'), output.index('<h1>Test essay 1</h1>'))
 
     def test_drafts_ignored_and_missing_date_fails(self):
         directory = self.root / 'writing/draft'

@@ -107,17 +107,25 @@ def build(root):
         raise ValueError('No published essays found')
     # Slug is the deterministic tie-breaker for essays published the same day.
     essays.sort(key=lambda essay: (essay[0], essay[1]), reverse=True)
-    published, slug, title, article = essays[0]
-    featured = RebaseLinks(article, slug).result()
+    featured = []
+    for published, slug, title, article in essays[:3]:
+        featured.append(
+            '<section class="featured-essay">\n'
+            + RebaseLinks(article, slug).result()
+            + f'\n<a class="permalink" href="./{escape(slug)}/">Permanent link to this essay</a>'
+            + '\n</section>'
+        )
     archive = []
-    for published, slug_old, title_old, _ in essays[1:]:
+    for published, slug_old, title_old, _ in essays[3:]:
         archive.append(f'<li><a href="./{escape(slug_old)}/">{escape(title_old)}</a>'
                        f'<time datetime="{published.isoformat()}">{date_label(published)}</time></li>')
-    previous = '<ol>' + '\n'.join(archive) + '</ol>' if archive else '<p>This is the first essay.</p>'
+    previous = (
+        '<section class="previous-writing" aria-labelledby="previous-writing">'
+        + '<h2 id="previous-writing">Earlier writing</h2>'
+        + '<ol>' + '\n'.join(archive) + '</ol></section>'
+    ) if archive else ''
     main = ('<main class="reading writing-index">\n<p class="writing-label">Writing</p>\n'
-            + featured + f'\n<a class="permalink" href="./{escape(slug)}/">Permanent link to this essay</a>\n'
-            + '<section class="previous-writing" aria-labelledby="previous-writing">'
-            + '<h2 id="previous-writing">Previous writing</h2>' + previous + '</section>\n</main>')
+            + '\n'.join(featured) + '\n' + previous + '\n</main>')
     template = (root / 'scripts/templates/writing.html').read_text(encoding='utf-8')
     if template.count('{{WRITING_MAIN}}') != 1:
         raise ValueError('Writing template must have exactly one main placeholder')

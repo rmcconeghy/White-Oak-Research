@@ -1,12 +1,12 @@
 # Publishing writing
 
-Each `writing/<slug>/index.html` is the single editable source of an essay, including its permanent page. The Python standard-library script discovers these pages, sorts them by their explicit publication date (newest first), and generates `writing/index.html`. The generated HTML contains the newest complete article and links to older essays. There is no browser JavaScript or GitHub API dependency.
+Each `writing/<slug>/index.html` is the single editable source of an essay, including its permanent page. The Python standard-library script discovers these pages, sorts them by their explicit publication date (newest first), and generates `writing/index.html`. The generated HTML contains the three newest complete articles (newest first) and links to essays older than those three. There is no browser JavaScript or GitHub API dependency.
 
 ## Add an essay
 
 1. Copy `writing/why-write/index.html` to `writing/your-new-slug/index.html`. Keep the header, navigation, footer and stylesheet links. Choose a permanent slug; changing it later breaks links.
 2. Replace the document `<title>`, article `<h1>` and paragraphs with your own writing. The article needs `data-published="YYYY-MM-DD"` and a visible `<time datetime="YYYY-MM-DD">Month D, YYYY</time>` inside `<p class="essay-meta">`. Use the actual publication date, never the file modification date. Both dates must match. If two essays share a date, the slug in descending alphabetical order breaks the tie.
-3. Commit the new essay to `main`. The GitHub Actions workflow runs tests, regenerates the Writing index, and deploys the whole static site. The old featured essay becomes an archive link automatically. The build does not commit generated changes back to the repository; the deployed index is always regenerated. Do not edit the generated index directly.
+3. Commit the new essay to `main`. The GitHub Actions workflow runs tests, regenerates the Writing index, and deploys the whole static site. The three newest essays remain fully displayed; older essays automatically move to the linked archive. The build does not commit generated changes back to the repository; the deployed index is always regenerated. Do not edit the generated index directly.
 
 For local preview, run:
 

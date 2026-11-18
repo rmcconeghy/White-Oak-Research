@@ -29,3 +29,6 @@
 .previous-writing a { font-size:20px;line-height:1.4; }
 .previous-writing time { display:block;font-size:13px;color:var(--muted);margin-top:6px; }
 .previous-writing p { font-size:14px;color:var(--muted); }
+
+/* Separate the three full-length essays on the Writing landing page. */
+.writing-index .featured-essay + .featured-essay { margin-top:72px;padding-top:48px;border-top:1px solid var(--line); }
