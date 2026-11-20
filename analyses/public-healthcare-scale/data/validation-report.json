@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "built_at_utc": "2026-11-20T18:28:36.559262+00:00",
+  "period": {
+    "all_years": [
+      1966,
+      2024
+    ],
+    "figure_years": [
+      1995,
+      2005,
+      2015,
+      2024
+    ],
+    "latest_common_actual_year": 2024
+  },
+  "sources": {
+    "cms_detail": {
+      "file": "data/raw/cms-detail.zip",
+      "sha256": "b6a9e26774ca36931d42add46204947d6335fc4898011780563196898f964746",
+      "retrieved_at_utc": "2026-11-16T16:56:41.916761+00:00",
+      "vintage": "2024 NHE comprehensive revision; CY 1960\u20132024"
+    },
+    "cms_methods": {
+      "file": "data/raw/cms-methods.pdf",
+      "sha256": "9c5755666847a78103016f04da937326744071a9a6736f4e77e91ce9e7af8629",
+      "retrieved_at_utc": "2026-11-16T16:56:42.225729+00:00"
+    },
+    "cms_benchmark": {
+      "file": "data/raw/cms-tables.zip",
+      "sha256": "a09ef6d3e84e25d745047a47b6b08a0d96b303085b4c725b67ce67a0eb0c4420",
+      "retrieved_at_utc": "2026-11-16T16:56:41.977198+00:00"
+    },
+    "cms_summary": {
+      "file": "data/raw/cms-summary.zip",
+      "sha256": "ef92c5602a96ffebd5ec0d313f0e7dc55bca979178ca53d8e519cfd51bd99256",
+      "retrieved_at_utc": "2026-11-16T16:56:42.112521+00:00"
+    },
+    "bea": {
+      "file": "data/raw/bea-section1.xlsx",
+      "sha256": "a920921a004910f973021dc89236f11fca5120fadefcaba4a8e1ff55f7625e2d",
+      "retrieved_at_utc": "2026-11-16T16:56:42.923415+00:00",
+      "published": "2026-10-29",
+      "table": "1.1.5 line 1 and 1.1.9 line 1",
+      "unit": "millions of dollars for GDP; index 2017=100 for implicit deflator",
+      "annual_sheet": "T10105-A / T10109-A"
+    }
+  },
+  "selected_rows": {
+    "Medicare": {
+      "csv_row_1_based": 7,
+      "exact_row_label": "Medicare",
+      "2024_usd_millions": 1118000.0,
+      "full_program_total": true
+    },
+    "Medicaid": {
+      "csv_row_1_based": 8,
+      "exact_row_label": "Medicaid (Title XIX)",
+      "2024_usd_millions": 931692.0,
+      "full_program_total": true
+    },
+    "VA health care (CMS)": {
+      "csv_row_1_based": 15,
+      "exact_row_label": "Department of Veterans Affairs",
+      "2024_usd_millions": 117580.0,
+      "full_program_total": true
+    }
+  },
+  "checks": {
+    "annual_gdp_millions_converted_to_billions": true,
+    "annual_not_quarterly": true,
+    "bea_gdp_2024_billions": 29380.991,
+    "cms_summary_gdp_2024_billions": 29298.0,
+    "bea_vs_cms_summary_gdp_percent_difference": 0.283265069288019,
+    "cms_program_2024_detail_matches_table19_millions": {
+      "Medicare": 1118000.0,
+      "Medicaid": 931692.0,
+      "VA health care (CMS)": 117580.0
+    },
+    "cms_total_nhe_detail_billions": 5278.588,
+    "cms_summary_nhe_billions": 5278.6,
+    "cms_detail_vs_summary_nhe_billions": -0.012000000000625732,
+    "cms_table3_medicare_medicaid_benchmarks": {
+      "Medicare": {
+        "2005": {
+          "table3_usd_billions_rounded": 339.8,
+          "detail_usd_billions": 339.762
+        },
+        "2015": {
+          "table3_usd_billions_rounded": 647.7,
+          "detail_usd_billions": 647.728
+        },
+        "2024": {
+          "table3_usd_billions_rounded": 1118.0,
+          "detail_usd_billions": 1118.0
+        }
+      },
+      "Medicaid": {
+        "2005": {
+          "table3_usd_billions_rounded": 309.4,
+          "detail_usd_billions": 309.351
+        },
+        "2015": {
+          "table3_usd_billions_rounded": 543.0,
+          "detail_usd_billions": 542.995
+        },
+        "2024": {
+          "table3_usd_billions_rounded": 931.7,
+          "detail_usd_billions": 931.692
+        }
+      }
+    },
+    "va_2024_table19_match": true,
+    "1995_table3_benchmark": "CMS Table 3 reports selected years only and has no 1995 column; source-row value preserved from full annual CMS detail file.",
+    "deflator_reference": 125.587,
+    "rows": 177,
+    "unique_program_year": true,
+    "contiguous_calendar_years": true,
+    "latest_real_equals_nominal": true
+  },
+  "growth_1995_2024": {
+    "Medicare": {
+      "real_percent": 223.17064670485505,
+      "nominal_percent": 506.31368869751026
+    },
+    "Medicaid": {
+      "real_percent": 242.80916438390375,
+      "nominal_percent": 543.1583161905814
+    },
+    "VA health care (CMS)": {
+      "real_percent": 322.31264837466114,
+      "nominal_percent": 692.3180592991914
+    }
+  },
+  "bea_gdp_deflator_growth_1995_2024_percent": 87.61409641614009,
+  "comparability": "CMS Medicare and Medicaid are NHEA source-of-funds program totals including administration and applicable private-plan non-medical costs; Medicaid (Title XIX) excludes separately tabulated CHIP and CMS deducts Medicaid Medicare-premium buy-ins to avoid double counting. VA health care is CMS's Department of Veterans Affairs NHEA measure: VA-supplied detailed quarterly expenditure categories converted to calendar-year totals and mapped to NHE service categories. It represents VHA care and associated administration, not the whole VA budget. NHEA VA spending and Medicare/Medicaid financing totals are not identical kinds of delivery or populations. CMS 2024 vintage includes comprehensive historical revisions. BEA GDP is a later vintage (published 2026-10-29); its 2024 GDP is compared with CMS summary GDP and small revision-vintage differences are recorded. The GDP share uses BEA nominal GDP for each matching calendar year; the real-dollar series uses BEA GDP implicit price deflator, latest common year 2024. Deflation adjusts general economy-wide prices, not healthcare-specific prices or service volume."
+}
