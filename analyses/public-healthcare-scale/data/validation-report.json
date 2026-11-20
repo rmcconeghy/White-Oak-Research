@@ -1,13 +1,13 @@
 {
   "status": "passed",
-  "built_at_utc": "2026-11-20T18:28:36.559262+00:00",
+  "built_at_utc": "2026-11-20T19:37:51.227221+00:00",
   "period": {
     "all_years": [
       1966,
       2024
     ],
     "figure_years": [
-      1995,
+      1996,
       2005,
       2015,
       2024
@@ -44,6 +44,24 @@
       "table": "1.1.5 line 1 and 1.1.9 line 1",
       "unit": "millions of dollars for GDP; index 2017=100 for implicit deflator",
       "annual_sheet": "T10105-A / T10109-A"
+    },
+    "pce_health": {
+      "url": "https://meps.ahrq.gov/about_meps/Price_Index.shtml",
+      "series": "BEA NIPA Table 2.5.4 line 37 as republished by AHRQ MEPS Table 3, April 2026",
+      "years": [
+        1996,
+        2024
+      ],
+      "base_year": 2017,
+      "reference_value_2024": 116.048
+    },
+    "cms_enrollment": {
+      "table": "CMS NHE Table 21, rows 20\u201321 and 30\u201331",
+      "years": [
+        1987,
+        2024
+      ],
+      "sha256": "87b4d41617949d1cf7ceba469d227a78e5661d59dc66e9143acac47dd387e644"
     }
   },
   "selected_rows": {
@@ -116,7 +134,9 @@
     "rows": 177,
     "unique_program_year": true,
     "contiguous_calendar_years": true,
-    "latest_real_equals_nominal": true
+    "latest_real_equals_nominal": true,
+    "health_price_adjusted_reference_year_equals_nominal": true,
+    "cms_table21_enrollment_and_per_enrollee_reconcile_with_program_totals_within_rounding": true
   },
   "growth_1995_2024": {
     "Medicare": {
@@ -133,5 +153,5 @@
     }
   },
   "bea_gdp_deflator_growth_1995_2024_percent": 87.61409641614009,
-  "comparability": "CMS Medicare and Medicaid are NHEA source-of-funds program totals including administration and applicable private-plan non-medical costs; Medicaid (Title XIX) excludes separately tabulated CHIP and CMS deducts Medicaid Medicare-premium buy-ins to avoid double counting. VA health care is CMS's Department of Veterans Affairs NHEA measure: VA-supplied detailed quarterly expenditure categories converted to calendar-year totals and mapped to NHE service categories. It represents VHA care and associated administration, not the whole VA budget. NHEA VA spending and Medicare/Medicaid financing totals are not identical kinds of delivery or populations. CMS 2024 vintage includes comprehensive historical revisions. BEA GDP is a later vintage (published 2026-10-29); its 2024 GDP is compared with CMS summary GDP and small revision-vintage differences are recorded. The GDP share uses BEA nominal GDP for each matching calendar year; the real-dollar series uses BEA GDP implicit price deflator, latest common year 2024. Deflation adjusts general economy-wide prices, not healthcare-specific prices or service volume."
+  "comparability": "CMS Medicare and Medicaid are NHEA source-of-funds program totals including administration and applicable private-plan non-medical costs; Medicaid (Title XIX) excludes separately tabulated CHIP and CMS deducts Medicaid Medicare-premium buy-ins to avoid double counting. VA health care is CMS's Department of Veterans Affairs NHEA measure: VA-supplied detailed quarterly expenditure categories converted to calendar-year totals and mapped to NHE service categories. It represents VHA care and associated administration, not the whole VA budget. NHEA VA spending and Medicare/Medicaid financing totals are not identical kinds of delivery or populations. CMS 2024 vintage includes comprehensive historical revisions. BEA GDP is a later vintage (published 2026-10-29); its 2024 GDP is compared with CMS summary GDP and small revision-vintage differences are recorded. The GDP share uses BEA nominal GDP for each matching calendar year; The CSV provides GDP-deflated spending for economy-wide purchasing power and PCE health-price-adjusted spending for comparison against a national health price benchmark. Neither index isolates service volume."
 }

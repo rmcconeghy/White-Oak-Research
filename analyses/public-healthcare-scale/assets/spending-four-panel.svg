@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="figtitle figdesc">
-<title id="figtitle">Public healthcare spending in the United States, 1995–2024</title>
-<desc id="figdesc">Four panels compare inflation-adjusted spending, shares of GDP, real growth since 1995, and 2024 spending for Medicare, Medicaid, and CMS-measured VA healthcare.</desc>
+<title id="figtitle">Medicare, Medicaid, and VA health spending, 1996–2024</title>
+<desc id="figdesc">Four panels compare health-price-adjusted spending, shares of GDP, spending per enrollee, and 2024 spending for Medicare, Medicaid, and CMS-measured VA healthcare.</desc>
 <style>text{font-family:Arial,sans-serif;fill:#253c31}.panel{fill:#fffefa;stroke:#d9ddd5;stroke-width:1.5}.title{font-size:23px;font-weight:700}.sub{font-size:14px;fill:#627168}.label{font-size:15px}.tick{font-size:13px;fill:#627168}.value{font-size:14px;font-weight:700}.grid{stroke:#e4e7e1;stroke-width:1}.bar{rx:2}</style>
-<g><rect class="panel" x="24" y="20" width="560" height="390" rx="8"/><text class="title" x="48" y="58">A  Spending in 2024 dollars</text><text class="sub" x="48" y="82">Annual spending, $ billions · BEA GDP deflator</text>
+<g><rect class="panel" x="24" y="20" width="560" height="390" rx="8"/><text class="title" x="48" y="58">A  Spending in 2024 dollars</text><text class="sub" x="48" y="82">Annual spending, $ billions · BEA PCE health price index</text>
 <line class="grid" x1="105.0" y1="118" x2="105.0" y2="323"/><text class="tick" text-anchor="middle" x="105.0" y="343">0</text>
 <line class="grid" x1="212.5" y1="118" x2="212.5" y2="323"/><text class="tick" text-anchor="middle" x="212.5" y="343">300</text>
 <line class="grid" x1="320.0" y1="118" x2="320.0" y2="323"/><text class="tick" text-anchor="middle" x="320.0" y="343">600</text>
 <line class="grid" x1="427.5" y1="118" x2="427.5" y2="323"/><text class="tick" text-anchor="middle" x="427.5" y="343">900</text>
 <line class="grid" x1="535.0" y1="118" x2="535.0" y2="323"/><text class="tick" text-anchor="middle" x="535.0" y="343">1200</text>
-<text class="label" text-anchor="end" x="93" y="142">1995</text>
-<rect class="bar" x="105" y="118" width="124.0" height="9" fill="#244f3d"/><text class="value" x="235.0" y="127">346</text>
-<rect class="bar" x="105" y="130" width="97.4" height="9" fill="#9a6a2f"/><text class="value" x="208.4" y="139">272</text>
-<rect class="bar" x="105" y="142" width="10.0" height="9" fill="#527995"/><text class="value" x="121.0" y="151">28</text>
+<text class="label" text-anchor="end" x="93" y="142">1996</text>
+<rect class="bar" x="105" y="118" width="136.7" height="9" fill="#244f3d"/><text class="value" x="247.7" y="127">382</text>
+<rect class="bar" x="105" y="130" width="104.7" height="9" fill="#9a6a2f"/><text class="value" x="215.7" y="139">292</text>
+<rect class="bar" x="105" y="142" width="10.7" height="9" fill="#527995"/><text class="value" x="121.7" y="151">30</text>
 <text class="label" text-anchor="end" x="93" y="190">2005</text>
-<rect class="bar" x="105" y="166" width="187.5" height="9" fill="#244f3d"/><text class="value" x="298.5" y="175">523</text>
-<rect class="bar" x="105" y="178" width="170.7" height="9" fill="#9a6a2f"/><text class="value" x="281.7" y="187">476</text>
-<rect class="bar" x="105" y="190" width="16.4" height="9" fill="#527995"/><text class="value" x="127.4" y="199">46</text>
+<rect class="bar" x="105" y="166" width="181.4" height="9" fill="#244f3d"/><text class="value" x="292.4" y="175">506</text>
+<rect class="bar" x="105" y="178" width="165.2" height="9" fill="#9a6a2f"/><text class="value" x="276.2" y="187">461</text>
+<rect class="bar" x="105" y="190" width="15.9" height="9" fill="#527995"/><text class="value" x="126.9" y="199">44</text>
 <text class="label" text-anchor="end" x="93" y="238">2015</text>
-<rect class="bar" x="105" y="214" width="299.5" height="9" fill="#244f3d"/><text class="value" x="410.5" y="223">836</text>
-<rect class="bar" x="105" y="226" width="251.1" height="9" fill="#9a6a2f"/><text class="value" x="362.1" y="235">701</text>
-<rect class="bar" x="105" y="238" width="29.9" height="9" fill="#527995"/><text class="value" x="140.9" y="247">83</text>
+<rect class="bar" x="105" y="214" width="278.2" height="9" fill="#244f3d"/><text class="value" x="389.2" y="223">776</text>
+<rect class="bar" x="105" y="226" width="233.2" height="9" fill="#9a6a2f"/><text class="value" x="344.2" y="235">651</text>
+<rect class="bar" x="105" y="238" width="27.8" height="9" fill="#527995"/><text class="value" x="138.8" y="247">78</text>
 <text class="label" text-anchor="end" x="93" y="286">2024</text>
 <rect class="bar" x="105" y="262" width="400.6" height="9" fill="#244f3d"/><text class="value" x="511.6" y="271">1,118</text>
 <rect class="bar" x="105" y="274" width="333.9" height="9" fill="#9a6a2f"/><text class="value" x="444.9" y="283">932</text>
@@ -32,10 +32,10 @@
 <line class="grid" x1="949.0" y1="118" x2="949.0" y2="323"/><text class="tick" text-anchor="middle" x="949.0" y="343">3%</text>
 <line class="grid" x1="1033.0" y1="118" x2="1033.0" y2="323"/><text class="tick" text-anchor="middle" x="1033.0" y="343">4%</text>
 <line class="grid" x1="1117.0" y1="118" x2="1117.0" y2="323"/><text class="tick" text-anchor="middle" x="1117.0" y="343">5%</text>
-<text class="label" text-anchor="end" x="685" y="142">1995</text>
-<rect class="bar" x="697" y="118" width="202.7" height="9" fill="#244f3d"/><text class="value" x="905.7" y="127">2.4%</text>
-<rect class="bar" x="697" y="130" width="159.3" height="9" fill="#9a6a2f"/><text class="value" x="862.3" y="139">1.9%</text>
-<rect class="bar" x="697" y="142" width="16.3" height="9" fill="#527995"/><text class="value" x="719.3" y="151">0.2%</text>
+<text class="label" text-anchor="end" x="685" y="142">1996</text>
+<rect class="bar" x="697" y="118" width="206.8" height="9" fill="#244f3d"/><text class="value" x="909.8" y="127">2.5%</text>
+<rect class="bar" x="697" y="130" width="158.3" height="9" fill="#9a6a2f"/><text class="value" x="861.3" y="139">1.9%</text>
+<rect class="bar" x="697" y="142" width="16.2" height="9" fill="#527995"/><text class="value" x="719.2" y="151">0.2%</text>
 <text class="label" text-anchor="end" x="685" y="190">2005</text>
 <rect class="bar" x="697" y="166" width="218.9" height="9" fill="#244f3d"/><text class="value" x="921.9" y="175">2.6%</text>
 <rect class="bar" x="697" y="178" width="199.3" height="9" fill="#9a6a2f"/><text class="value" x="902.3" y="187">2.4%</text>
@@ -49,14 +49,24 @@
 <rect class="bar" x="697" y="274" width="266.4" height="9" fill="#9a6a2f"/><text class="value" x="969.4" y="283">3.2%</text>
 <rect class="bar" x="697" y="286" width="33.6" height="9" fill="#527995"/><text class="value" x="736.6" y="295">0.4%</text>
 </g>
-<g><rect class="panel" x="24" y="438" width="560" height="390" rx="8"/><text class="title" x="48" y="476">C  Real growth since 1995</text><text class="sub" x="48" y="500">Percentage change in 2024 dollars · common start year</text>
-<line class="grid" x1="175.0" y1="535" x2="175.0" y2="745"/><text class="tick" text-anchor="middle" x="175.0" y="765">0%</text>
-<line class="grid" x1="276.4" y1="535" x2="276.4" y2="745"/><text class="tick" text-anchor="middle" x="276.4" y="765">100%</text>
-<line class="grid" x1="377.9" y1="535" x2="377.9" y2="745"/><text class="tick" text-anchor="middle" x="377.9" y="765">200%</text>
-<line class="grid" x1="479.3" y1="535" x2="479.3" y2="745"/><text class="tick" text-anchor="middle" x="479.3" y="765">300%</text>
-<text class="label" text-anchor="end" x="161" y="557">Medicare</text><rect class="bar" x="175" y="535" width="226.4" height="27" fill="#244f3d"/><text class="value" x="409.4" y="554">+223%</text>
-<text class="label" text-anchor="end" x="161" y="612">Medicaid</text><rect class="bar" x="175" y="590" width="246.3" height="27" fill="#9a6a2f"/><text class="value" x="429.3" y="609">+243%</text>
-<text class="label" text-anchor="end" x="161" y="667">VA healthcare</text><rect class="bar" x="175" y="645" width="326.9" height="27" fill="#527995"/><text class="value" x="509.9" y="664">+322%</text>
+<g><rect class="panel" x="24" y="438" width="560" height="390" rx="8"/><text class="title" x="48" y="476">C  Spending per enrollee</text><text class="sub" x="48" y="500">Medicare and Medicaid · 2024 dollars, adjusted for health prices</text>
+<line class="grid" x1="105.0" y1="535" x2="105.0" y2="740"/><text class="tick" text-anchor="middle" x="105.0" y="760">0</text>
+<line class="grid" x1="207.5" y1="535" x2="207.5" y2="740"/><text class="tick" text-anchor="middle" x="207.5" y="760">5000</text>
+<line class="grid" x1="310.0" y1="535" x2="310.0" y2="740"/><text class="tick" text-anchor="middle" x="310.0" y="760">10000</text>
+<line class="grid" x1="412.5" y1="535" x2="412.5" y2="740"/><text class="tick" text-anchor="middle" x="412.5" y="760">15000</text>
+<line class="grid" x1="515.0" y1="535" x2="515.0" y2="740"/><text class="tick" text-anchor="middle" x="515.0" y="760">20000</text>
+<text class="label" text-anchor="end" x="93" y="552">1996</text>
+<rect class="bar" x="105" y="535" width="209.9" height="10" fill="#244f3d"/><text class="value" x="320.9" y="545">$10,239</text>
+<rect class="bar" x="105" y="549" width="186.1" height="10" fill="#9a6a2f"/><text class="value" x="297.1" y="559">$9,077</text>
+<text class="label" text-anchor="end" x="93" y="600">2005</text>
+<rect class="bar" x="105" y="583" width="249.8" height="10" fill="#244f3d"/><text class="value" x="360.8" y="593">$12,186</text>
+<rect class="bar" x="105" y="597" width="206.2" height="10" fill="#9a6a2f"/><text class="value" x="317.2" y="607">$10,060</text>
+<text class="label" text-anchor="end" x="93" y="648">2015</text>
+<rect class="bar" x="105" y="631" width="293.1" height="10" fill="#244f3d"/><text class="value" x="404.1" y="641">$14,297</text>
+<rect class="bar" x="105" y="645" width="186.6" height="10" fill="#9a6a2f"/><text class="value" x="297.6" y="655">$9,104</text>
+<text class="label" text-anchor="end" x="93" y="696">2024</text>
+<rect class="bar" x="105" y="679" width="344.0" height="10" fill="#244f3d"/><text class="value" x="455.0" y="689">$16,779</text>
+<rect class="bar" x="105" y="693" width="226.5" height="10" fill="#9a6a2f"/><text class="value" x="337.5" y="703">$11,050</text>
 </g>
 <g><rect class="panel" x="616" y="438" width="560" height="390" rx="8"/><text class="title" x="640" y="476">D  Latest common year · 2024</text><text class="sub" x="640" y="500">Nominal dollars = constant 2024 dollars in the reference year</text>
 <line class="grid" x1="790.0" y1="535" x2="790.0" y2="745"/><text class="tick" text-anchor="middle" x="790.0" y="765">0</text>
