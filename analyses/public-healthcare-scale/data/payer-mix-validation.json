@@ -1,0 +1,92 @@
+{
+  "years": [
+    1996,
+    2024
+  ],
+  "years_validated": 29,
+  "cms_vintage": "NHE historical release through 2024, 2024 comprehensive revision",
+  "bea_price_vintage": "2026-10-29",
+  "payer_rows_1_indexed": {
+    "private": [
+      6,
+      "Private Health Insurance"
+    ],
+    "medicare": [
+      7,
+      "Medicare"
+    ],
+    "medicaid": [
+      8,
+      "Medicaid (Title XIX)"
+    ],
+    "out_of_pocket": [
+      4,
+      "Out of pocket"
+    ]
+  },
+  "other_validation_rows_1_indexed": {
+    "chip": [
+      11,
+      "CHIP (Title XIX and Title XXI)"
+    ],
+    "defense": [
+      14,
+      "Department of Defense"
+    ],
+    "va": [
+      15,
+      "Department of Veterans Affairs"
+    ],
+    "other_third_party": [
+      16,
+      "Other Third Party Payers and Programs"
+    ],
+    "public_health": [
+      32,
+      "Public Health Activity"
+    ],
+    "investment": [
+      35,
+      "Investment"
+    ]
+  },
+  "nominal_reconciliation_max_usd_millions": 0,
+  "other_row_sum_tolerance_usd_millions": 5.5,
+  "other_row_sum_max_difference_usd_millions": 2,
+  "2024": {
+    "year": 2024,
+    "nhe_nominal_usd_millions": 5278588.0,
+    "nhe_real_2024_usd_millions": 5278588.0,
+    "cms_gdp_nominal_usd_billions": 29298.0,
+    "nhe_pct_gdp": 18.016889,
+    "bea_gdp_deflator_2017_100": 125.587,
+    "private_nominal_usd_millions": 1644592.0,
+    "private_real_2024_usd_millions": 1644592.0,
+    "private_pct_nhe": 31.155908,
+    "medicare_nominal_usd_millions": 1118000.0,
+    "medicare_real_2024_usd_millions": 1118000.0,
+    "medicare_pct_nhe": 21.179906,
+    "medicaid_nominal_usd_millions": 931692.0,
+    "medicaid_real_2024_usd_millions": 931692.0,
+    "medicaid_pct_nhe": 17.650402,
+    "out_of_pocket_nominal_usd_millions": 556554.0,
+    "out_of_pocket_real_2024_usd_millions": 556554.0,
+    "out_of_pocket_pct_nhe": 10.543615,
+    "other_nominal_usd_millions": 1027750.0,
+    "other_real_2024_usd_millions": 1027750.0,
+    "other_pct_nhe": 19.470169,
+    "other_chip_nominal_usd_millions": 30995.0,
+    "other_defense_nominal_usd_millions": 50009.0,
+    "other_va_nominal_usd_millions": 117580.0,
+    "other_other_third_party_nominal_usd_millions": 432933.0,
+    "other_public_health_nominal_usd_millions": 157569.0,
+    "other_investment_nominal_usd_millions": 238664.0,
+    "other_rounding_usd_millions": 0.0
+  },
+  "bea_original_workbook_sha256": "a920921a004910f973021dc89236f11fca5120fadefcaba4a8e1ff55f7625e2d",
+  "sha256": {
+    "cms-detail.zip": "b6a9e26774ca36931d42add46204947d6335fc4898011780563196898f964746",
+    "cms-summary.zip": "ef92c5602a96ffebd5ec0d313f0e7dc55bca979178ca53d8e519cfd51bd99256",
+    "bea-gdp-deflator-2026-10-29.csv": "b04dbc9e91069515189604233d4e3411bf07e784c85de9fea1d661de60904eb5"
+  }
+}

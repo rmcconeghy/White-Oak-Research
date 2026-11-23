@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="288" viewBox="0 0 360 288" role="img" aria-labelledby="title desc">
+<title id="title">National health spending as a share of GDP</title><desc id="desc">The share rose from 13.3% in 1996 to a high of 19.7% in 2020 and was 18.0% in 2024.</desc>
+<path fill="#fffdf8" d="M0 0H360V288H0Z"/>
+<path d="M50.00 249.00L330.00 249.00" fill="none" stroke="#d9dfd8" stroke-width="1"/>
+<text x="42.00" y="254.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="end">0%</text>
+<path d="M50.00 192.50L330.00 192.50" fill="none" stroke="#d9dfd8" stroke-width="1"/>
+<text x="42.00" y="197.50" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="end">5%</text>
+<path d="M50.00 136.00L330.00 136.00" fill="none" stroke="#d9dfd8" stroke-width="1"/>
+<text x="42.00" y="141.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="end">10%</text>
+<path d="M50.00 79.50L330.00 79.50" fill="none" stroke="#d9dfd8" stroke-width="1"/>
+<text x="42.00" y="84.50" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="end">15%</text>
+<path d="M50.00 23.00L330.00 23.00" fill="none" stroke="#d9dfd8" stroke-width="1"/>
+<text x="42.00" y="28.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="end">20%</text>
+<text x="50.00" y="274.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="middle">1996</text>
+<text x="140.00" y="274.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="middle">2005</text>
+<text x="240.00" y="274.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="middle">2015</text>
+<text x="330.00" y="274.00" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#465d54" text-anchor="middle">2024</text>
+<path d="M50.00 98.80L60.00 99.82L70.00 99.65L80.00 99.70L90.00 98.51L100.00 90.69L110.00 80.41L120.00 74.42L130.00 73.80L140.00 73.40L150.00 72.02L160.00 69.11L170.00 65.31L180.00 54.54L190.00 54.62L200.00 55.13L210.00 55.43L220.00 57.61L230.00 55.81L240.00 52.76L250.00 49.25L260.00 49.40L270.00 50.00L280.00 49.38L290.00 26.74L300.00 40.54L310.00 50.08L320.00 48.88L330.00 45.41" fill="none" stroke="#203b31" stroke-width="3"/>
+<circle cx="50.00" cy="98.80" r="4" fill="#203b31"/>
+<text x="52.00" y="87.80" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#203b31" text-anchor="start">13.3%</text>
+<circle cx="290.00" cy="26.74" r="4" fill="#203b31"/>
+<text x="286.00" y="15.74" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#203b31" text-anchor="end">2020 · 19.7%</text>
+<circle cx="330.00" cy="45.41" r="4" fill="#203b31"/>
+<text x="326.00" y="62.41" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#203b31" text-anchor="end">18.0%</text>
+</svg>

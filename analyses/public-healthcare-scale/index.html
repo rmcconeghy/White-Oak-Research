@@ -1,24 +1,83 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A historical comparison of Medicare, Medicaid, and VA healthcare spending in the United States."><title>Medicare, Medicaid, and VA health spending | White Oak Research</title>
-<style>
-:root{--green:#244f3d;--ink:#253c31;--paper:#f7f5ef;--muted:#627168;--line:#d9ddd5;--card:#fffefa;--serif:Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,sans-serif}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans)}a{color:var(--green)}header{border-bottom:1px solid var(--line);padding:19px max(24px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;align-items:center}.brand{font-weight:700;color:var(--green);letter-spacing:.02em}nav{display:flex;gap:22px;font-size:.92rem}nav a{text-decoration:none}main{max-width:1120px;margin:0 auto;padding:54px 24px 80px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;color:var(--green);font-size:.77rem;font-weight:700}h1,h2{font-family:var(--serif);font-weight:400;line-height:1.15}h1{font-size:clamp(2.4rem,5.5vw,4.3rem);max-width:850px;margin:12px 0 20px}.dek{font-size:1.18rem;line-height:1.55;color:#435a4c;max-width:830px}.meta{font-size:.9rem;color:var(--muted);margin-top:22px}.figure-wrap{margin:38px 0 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:14px}.figure-wrap img{display:block;width:100%;height:auto}figcaption{color:var(--muted);font-size:.88rem;padding:0 4px}.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 4px 4px;font-size:.9rem}.legend span{display:inline-flex;align-items:center;gap:8px}.swatch{width:12px;height:12px;border-radius:2px;display:inline-block}section{margin-top:64px}h2{font-size:2.1rem;margin:0 0 18px}.prose{max-width:820px}.prose p{margin:.8em 0}.table-wrap{overflow-x:auto;margin:24px 0}table{border-collapse:collapse;width:100%;min-width:540px;background:var(--card)}th,td{padding:13px 15px;text-align:left;border-bottom:1px solid var(--line)}thead th{color:var(--muted);font-size:.84rem;text-transform:uppercase;letter-spacing:.05em}.downloads{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.button{border:1px solid var(--green);padding:10px 15px;border-radius:4px;text-decoration:none;font-weight:600}.note{border-left:3px solid var(--green);padding:10px 17px;background:#f0f2eb;color:#43584b}footer{border-top:1px solid var(--line);padding:24px max(24px,calc((100vw - 1120px)/2));color:var(--muted);font-size:.88rem}
-@media(max-width:720px){header{align-items:flex-start;gap:12px;flex-direction:column;padding:16px 20px}nav{gap:16px;flex-wrap:wrap}main{padding:38px 18px 58px}.dek{font-size:1.05rem}.figure-wrap{padding:8px;margin:26px -8px 12px}.legend{gap:8px 14px}section{margin-top:48px}h2{font-size:1.8rem}}
-</style><link rel="stylesheet" href="../../style.css"><link rel="stylesheet" href="../../research.css"><style>.scale-study{max-width:1120px;padding:40px var(--space) 64px}.scale-study figure{margin:28px 0}.scale-study section{margin-top:40px}.scale-study h2{font:600 24px/1.4 Arial,sans-serif;letter-spacing:-.4px}.scale-study a:not(.button){text-decoration:underline}.scale-study .button{background:transparent;color:var(--green)}.scale-methods{max-width:850px;padding:40px var(--space) 64px}.scale-methods h1{font:normal clamp(34px,5vw,56px)/1.15 Georgia,serif}.scale-methods h2{font:500 24px/1.4 Georgia,serif;margin:32px 0 16px}.scale-methods a{text-decoration:underline}.scale-methods code{overflow-wrap:anywhere}.scale-methods li{margin:12px 0}</style>
-</head><body>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who pays for American healthcare? | White Oak Research</title>
+<meta name="description" content="How U.S. national health spending and its funding sources changed from 1996 to 2024.">
+<meta property="og:title" content="Who pays for American healthcare?">
+<meta property="og:description" content="Three charts on national health expenditures, 1996–2024.">
+<meta property="og:image" content="https://rmcconeghy.github.io/White-Oak-Research/analyses/public-healthcare-scale/assets/health-spending-linkedin.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1500">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../research.css">
+<link rel="stylesheet" href="payer-mix.css">
+</head>
+<body>
 <header><a class="brand" href="../../" aria-label="White Oak Research home"><span class="mark branch-mark"><img src="../../oak-leaves.png" alt=""/></span><span>White Oak<small>RESEARCH</small></span></a><nav><a aria-current="page" class="nav-analyses" href="../../#analyses">Analyses</a><a class="nav-writing" href="../../writing/">Writing</a><a class="nav-about" href="../../about/">About</a></nav></header>
+<main class="mix-study">
+<a class="back" href="../../#analyses">← All analyses</a>
+<p class="eyebrow">Analysis 03 · U.S. health spending</p>
+<h1>Who pays for American healthcare?</h1>
+<p class="mix-dek">The U.S. spent $5.28 trillion on healthcare in 2024, up from $1.98 trillion in 1996 after adjusting for economy-wide inflation. Private health insurance remained the largest single source of funds. Medicare and Medicaid together accounted for nearly two in every five dollars.</p>
+<p class="mix-period">1996–2024 · Annual national health expenditures</p>
 
-<main id="top" class="scale-study"><a href="../../#analyses">← All analyses</a><div class="eyebrow">Health spending · United States</div><h1>Health spending in Medicare, Medicaid, and the VA</h1>
-<p class="dek">Medicare and Medicaid each spent more than $900 billion in 2024. Medicare spent about $16,800 per enrollee, compared with $11,100 for Medicaid. CMS measured VA health care spending at $118 billion.</p>
-<p class="meta">United States · Selected calendar years, 1996–2024</p>
-<figure><div class="figure-wrap"><picture><source media="(max-width:720px)" srcset="assets/spending-four-panel-mobile.svg"><img src="assets/spending-four-panel.svg" alt="Four charts compare health-price-adjusted spending, spending as a share of GDP, Medicare and Medicaid spending per enrollee, and 2024 totals."></picture><div class="legend"><span><i class="swatch" style="background:#244f3d"></i>Medicare</span><span><i class="swatch" style="background:#9a6a2f"></i>Medicaid (Title XIX)</span><span><i class="swatch" style="background:#527995"></i>VA health care (CMS)</span></div></div><figcaption>Figure 1. Spending comparisons use common calendar years. Dollar trends use the BEA PCE health price index to express spending in 2024 dollars. GDP shares use current-dollar program spending and current-dollar GDP in the same year.</figcaption></figure>
-<section id="findings" class="prose"><h2>What the comparison shows</h2>
-<p>In 2024, Medicare spending was <strong>$1.118 trillion</strong>, equal to <strong>3.81% of GDP</strong>. Medicaid (Title XIX) was <strong>$932 billion</strong>, or <strong>3.17% of GDP</strong>. CMS’s VA health expenditure series was <strong>$118 billion</strong>, or <strong>0.40% of GDP</strong>. The denominator is BEA’s annual nominal GDP, $29.381 trillion.</p>
-<p>Medicaid enrollment fell from 92.2 million in 2023 to 84.3 million in 2024 as states resumed eligibility reviews after pandemic-era continuous coverage ended. CMS spending per enrollee rose from $9,473 to $11,050 in current dollars over the same period. The change reflects spending across a smaller enrolled population. Changes in who remained enrolled can affect the average. <a href="https://www.cms.gov/files/document/highlights.pdf">CMS 2024 spending highlights</a></p>
-<p>Enrollment, beneficiary age and health, and traditional Medicare versus Medicare Advantage enrollment can influence Medicare spending. For Medicaid, eligibility changes, including ACA expansion and the post-pandemic unwinding, alter the number and mix of beneficiaries. Drug spending and the mix of services can also change the averages. This comparison does not quantify each driver’s contribution. <a href="https://doi.org/10.1377/hlthaff.2025.01683">CMS authors’ analysis of 2024 spending</a></p>
-<p>VA health care combines a direct delivery system with purchased care. Its 1996 spending base was much smaller, so a given dollar increase translates into a larger percentage change. Eligibility and access expanded for veterans with qualifying service or toxic exposures under the PACT Act, and VA also finances care through its community care program. The spending series measures program scale. An assessment of efficiency would require comparable patient, service, and outcome data. <a href="https://www.cbo.gov/publication/61785">CBO on VA eligibility and community care</a></p></section>
-<section><h2>2024 at a glance</h2><div class="table-wrap"><table><thead><tr><th>Program measure</th><th>Spending</th><th>Share of GDP</th><th>Enrollment</th><th>Spending per enrollee</th></tr></thead><tbody><tr><th scope="row">Medicare</th><td>$1,118.0 billion</td><td>3.81%</td><td>66.6 million</td><td>$16,779</td></tr><tr><th scope="row">Medicaid</th><td>$931.7 billion</td><td>3.17%</td><td>84.3 million</td><td>$11,050</td></tr><tr><th scope="row">VA health care (CMS)</th><td>$117.6 billion</td><td>0.40%</td><td>—</td><td>—</td></tr></tbody></table></div><p class="note">Medicaid combines federal and state/local spending. CMS Table 21 supplies the two insurance enrollment and per-enrollee series. VA operates a direct and purchased care system with a different population and denominator.</p></section>
-<section id="downloads"><h2>Data and files</h2><p>Download the annual series (1966–2024) with nominal dollars and GDP shares, PCE health-price-adjusted spending (1996–2024), and CMS enrollment and per-enrollee spending for Medicare and Medicaid (1987–2024). The CSV also retains the GDP-deflated purchasing-power series.</p><div class="downloads"><a class="button" href="data/healthcare-spending.csv" download>Download CSV</a><a class="button" href="assets/spending-four-panel.svg" download>Download figure (SVG)</a><a class="button" href="methods.html">Read methods and sources</a></div></section>
-<section id="methods" class="prose"><h2>Scope and limitations</h2><p>This comparison covers Medicare, Medicaid Title XIX, and CMS-measured VA health care. CHIP, DoD/TRICARE, Indian Health Service, and ACA marketplace subsidies fall outside its scope.</p><p>CMS’s Department of Veterans Affairs measure is built from detailed quarterly VA expenditure data crosswalked to NHE service categories and converted to calendar years. It represents VHA health care and related administration, not total VA agency spending. It includes purchased care in the source categories; separately accounted research and structures/equipment are outside this payer/program total.</p><p>CMS’s 2024 comprehensive revision supplies all historical program values. BEA’s workbook was published October 29, 2026. In 2024, BEA GDP ($29,381 billion) is 0.28% above the GDP value in the CMS summary ($29,298 billion), consistent with different revision vintages. The calculated program shares use BEA GDP consistently across years. A national health price index provides a common benchmark. Program-specific prices, administration, the mix and intensity of care, and changes in who is covered can still affect adjusted spending.</p><p><a href="methods.html">Full methods, definitions, validation checks, and source links →</a></p></section>
-</main><footer><a class="footer-brand" href="../../">White Oak Research</a><span>Rhode Island, USA</span><a href="mailto:rmcconeghy@gmail.com">Let’s talk ↗</a></footer>
-</body></html>
+<figure>
+<picture><source media="(max-width:680px)" srcset="assets/health-spending-mobile.svg"><img src="assets/health-spending.svg" alt="Stacked area chart of U.S. health spending by source of funds. Total spending grows from $1.98 trillion in 1996 to $5.28 trillion in 2024 after adjusting for economy-wide inflation. The 2024 breakdown is in the table below."></picture>
+<figcaption>The height of the stack shows total spending. The thickness of each band shows spending from that source. Other NHE includes additional programs, public health activity, and investment.</figcaption>
+</figure>
+
+<section id="findings">
+<h2>Medicare and Medicaid gained share</h2>
+<p>The two programs together rose from <strong>32.7% in 1996 to 38.8% in 2024</strong>. Private health insurance accounted for about 31% at both endpoints, with a dip to 28.2% in 2020. Out-of-pocket spending fell from 13.8% to 10.5% of the total even as it roughly doubled in inflation-adjusted dollars, from $273 billion to $557 billion. A smaller share can still mean more spending when the total grows.</p>
+<ul class="mix-legend" aria-label="Payer categories, in order from bottom to top"><li><i class="mix-swatch" style="--swatch:#244c83" aria-hidden="true"></i>Private health insurance</li><li><i class="mix-swatch" style="--swatch:#167e88" aria-hidden="true"></i>Medicare</li><li><i class="mix-swatch" style="--swatch:#7eb964" aria-hidden="true"></i>Medicaid (Title XIX)</li><li><i class="mix-swatch" style="--swatch:#b5d5ec" aria-hidden="true"></i>Out-of-pocket</li><li><i class="mix-swatch" style="--swatch:#a6a6b2" aria-hidden="true"></i>Other NHE</li></ul>
+<figure>
+<picture><source media="(max-width:680px)" srcset="assets/payer-share-mobile.svg"><img src="assets/payer-share.svg" alt="100% stacked area chart of national health expenditures by source. From bottom to top the bands show private health insurance, Medicare, Medicaid, out-of-pocket spending, and Other NHE. Other NHE widens from 20.6% in 2019 to 26.2% in 2020 and narrows to 19.5% by 2024." loading="lazy"></picture>
+<figcaption>Share of total national health expenditures. Other NHE jumped from 20.6% in 2019 to 26.2% in 2020, when CMS recorded pandemic-related spending in categories such as public health activity and other federal programs. <a href="https://www.cms.gov/files/document/accounting-federal-covid-expenditures-national-health-expenditure-accounts.pdf">CMS accounting for federal COVID spending</a></figcaption>
+</figure>
+</section>
+
+<section>
+<h2>Healthcare reached 18% of the economy</h2>
+<p>National health expenditures rose from <strong>13.3% of GDP in 1996</strong> to <strong>18.0% in 2024</strong>. The ratio peaked at 19.7% in 2020 and fell to 17.6% by 2022. The ratio can move when healthcare spending changes, when GDP changes, or both.</p>
+<figure>
+<picture><source media="(max-width:680px)" srcset="assets/health-gdp-mobile.svg"><img src="assets/health-gdp.svg" alt="Line chart of health spending as a share of GDP, rising from 13.3% in 1996 to a 19.7% peak in 2020 and ending at 18.0% in 2024." loading="lazy"></picture>
+<figcaption>Current-dollar health expenditures divided by current-dollar GDP using the GDP series published in the same CMS release.</figcaption>
+</figure>
+</section>
+
+<section>
+<h2>The 2024 breakdown</h2>
+<table>
+<caption>U.S. national health expenditures by source of funds</caption>
+<thead><tr><th scope="col">Source</th><th scope="col">Spending</th><th scope="col">Share</th></tr></thead>
+<tbody><tr><th scope="row"><span class="mix-payer"><i class="mix-swatch" style="--swatch:#244c83" aria-hidden="true"></i>Private health insurance</span></th><td>$1,644.6B</td><td>31.2%</td></tr><tr><th scope="row"><span class="mix-payer"><i class="mix-swatch" style="--swatch:#167e88" aria-hidden="true"></i>Medicare</span></th><td>$1,118.0B</td><td>21.2%</td></tr><tr><th scope="row"><span class="mix-payer"><i class="mix-swatch" style="--swatch:#7eb964" aria-hidden="true"></i>Medicaid (Title XIX)</span></th><td>$931.7B</td><td>17.7%</td></tr><tr><th scope="row"><span class="mix-payer"><i class="mix-swatch" style="--swatch:#b5d5ec" aria-hidden="true"></i>Out-of-pocket</span></th><td>$556.6B</td><td>10.5%</td></tr><tr><th scope="row"><span class="mix-payer"><i class="mix-swatch" style="--swatch:#a6a6b2" aria-hidden="true"></i>Other NHE</span></th><td>$1,027.8B</td><td>19.5%</td></tr></tbody>
+<tfoot><tr><th scope="row">Total</th><td>$5,278.6B</td><td>100%</td></tr></tfoot>
+</table>
+<p class="mix-period">Amounts and shares are independently rounded.</p>
+</section>
+
+<section id="methods">
+<h2>What the categories measure</h2>
+<p>CMS tracks the source of funds for health expenditures, such as a public program, a private insurer, or a direct patient payment. CMS publishes a separate sponsor account to estimate how much households, employers, and governments ultimately finance. These charts use the source-of-funds account throughout.</p>
+<p>The dollar chart uses the BEA GDP price deflator, so “2024 dollars” reflect economy-wide purchasing power. The trends combine changes in prices specific to healthcare, use, and the mix of services. <a href="methods.html">Read the methods and definitions</a>.</p>
+</section>
+
+<section id="downloads">
+<h2>Data and figures</h2>
+<ul class="mix-downloads">
+<li><a href="data/payer-mix.csv" download>Annual CSV</a></li>
+<li><a href="data/payer-mix-validation.json" download>Validation report</a></li>
+<li><a href="https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical">CMS historical data</a></li>
+</ul>
+<ul class="mix-downloads">
+<li>Desktop <a href="assets/health-spending.svg" download>SVG</a> / <a href="assets/health-spending.png" download>PNG</a></li>
+<li>Mobile <a href="assets/health-spending-mobile.svg" download>SVG</a> / <a href="assets/health-spending-mobile.png" download>PNG</a></li>
+<li>LinkedIn <a href="assets/health-spending-linkedin.svg" download>SVG</a> / <a href="assets/health-spending-linkedin.png" download>PNG</a></li>
+</ul>
+</section>
+</main>
+<footer><a class="footer-brand" href="../../">White Oak Research</a><span>Rhode Island, USA</span><a href="mailto:rmcconeghy@gmail.com">Let’s talk ↗</a></footer>
+</body>
+</html>
