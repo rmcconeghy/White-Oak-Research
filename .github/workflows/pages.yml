@@ -25,6 +25,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Generate Writing landing page
         run: python scripts/build_writing.py
+      - name: Generate editorial homepage previews
+        run: python scripts/build_home.py
       - name: Prepare static site
         run: |
           mkdir _site
