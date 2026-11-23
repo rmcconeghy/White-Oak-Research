@@ -29,3 +29,7 @@ The November 14, 2026 date for “0. Why Write?” is verified by its initial pu
 Under repository **Settings → Pages → Build and deployment**, set **Source** to **GitHub Actions**. `.github/workflows/pages.yml` then builds and deploys on every push to `main`, and can be run manually from the Actions tab. Pull requests run tests and build only. `.nojekyll` remains in the output; Jekyll is not used. No token or additional secret is needed. Existing URLs and other site files are preserved.
 
 If Actions is disabled, enable it for this repository. The workflow needs the standard `github-pages` environment to permit deployments from `main`. If switching from branch deployment after committing this workflow, run **Build and deploy website → Run workflow** once.
+
+## Homepage previews
+
+The homepage is generated from `scripts/templates/home.html` by `scripts/build_home.py`. Its writing sidebar automatically lists the four newest published essays (with a short excerpt from each essay's first non-metadata paragraph), while `writing/index.html` continues to show the three newest full essays. Add new essays using the directions above; no homepage editing is required. Both generators run during GitHub Pages deployment. For local builds, run `python scripts/build_writing.py` and `python scripts/build_home.py` before starting the local web server. The editable layout and styling live in `scripts/templates/home.html` and `home.css`.
