@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods and sources | U.S. health spending | White Oak Research</title>
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../research.css">
+<link rel="stylesheet" href="payer-mix.css">
+</head>
+<body>
+<header><a class="brand" href="../../" aria-label="White Oak Research home"><span class="mark branch-mark"><img src="../../oak-leaves.png" alt=""/></span><span>White Oak<small>RESEARCH</small></span></a><nav><a aria-current="page" class="nav-analyses" href="../../#analyses">Analyses</a><a class="nav-writing" href="../../writing/">Writing</a><a class="nav-about" href="../../about/">About</a></nav></header>
+<main class="mix-methods">
+<a class="back" href="./">← Analysis</a>
+<h1>Methods and sources</h1>
+<p>Analysis 04 uses annual U.S. National Health Expenditure Accounts (NHEA) for 1996–2024. All spending comes from one CMS historical release through 2024, which incorporates the 2024 comprehensive revision.</p>
+
+<section>
+<h2>Source of funds</h2>
+<p>We use the top-level all-services rows of CMS’s detailed <code>NHE2024.csv</code>, the annual counterpart to the source-of-funds presentation in Table 3. The denominator is Total National Health Expenditures (row 3) in millions of current dollars. CMS’s sponsor tables assign ultimate financing to households, businesses, and governments. This study uses the five-category partition below.</p>
+<ul>
+<li><strong>Private health insurance (row 6).</strong> Benefits and non-medical insurance expenditures assigned to private health insurance by CMS. Spending CMS assigns to Medicare Advantage or Medicaid managed care stays with the respective public program.</li>
+<li><strong>Medicare (row 7).</strong> Total Medicare program expenditures as classified by CMS, including applicable administration and non-medical insurance expenditures.</li>
+<li><strong>Medicaid (Title XIX) (row 8).</strong> Combined federal and state/local program spending, including applicable administration and non-medical insurance expenditures. CMS removes Medicaid buy-ins to Medicare to avoid double counting. The CHIP row is separate.</li>
+<li><strong>Out-of-pocket spending (row 4).</strong> Direct payments by patients for healthcare goods and services, including deductibles, copays, and spending on uncovered services. Insurance premiums are outside this direct-payment category.</li>
+<li><strong>Other national health expenditures.</strong> Total NHE less the four named sources. We verify the residual against six CMS rows: CHIP (Title XIX and Title XXI, row 11), Department of Defense (14), Department of Veterans Affairs (15), Other Third Party Payers and Programs (16), government Public Health Activity (32), and Investment (35). Investment contains research and structures and equipment. Row 16 includes both public and private sources, including other federal and state/local programs, Indian Health Service, workers’ compensation, worksite healthcare, and other private revenues. Applicable program administration and non-medical insurance expenses stay with their source of funds, including the named insurance categories. Other contains the amounts associated with its own components and carries the small published rounding difference.</li>
+</ul>
+<p><a href="https://www.cms.gov/files/zip/national-health-expenditures-type-service-source-funds-cy-1960-2024.zip">CMS detailed historical data</a> · <a href="https://www.cms.gov/files/document/definitions-sources-methods.pdf">CMS definitions, sources, and methods</a></p>
+</section>
+
+<section>
+<h2>Dollars, shares, and GDP</h2>
+<p>The main chart expresses each year’s nominal amounts in 2024 dollars by multiplying by the ratio of the 2024 GDP implicit price deflator to the year’s deflator. The annual BEA NIPA Table 1.1.9 series (line 1, <code>A191RD</code>, 2017 = 100) comes from the October 29, 2026 workbook. This broad index measures prices across domestic output. The result describes spending in economy-wide purchasing-power terms, with healthcare-specific price changes still reflected in the series. It does not estimate a volume of care.</p>
+<p>A nominal stack would show a rise from $1.07 trillion to $5.28 trillion. We chose the adjusted stack because the chart spans 29 years and inflation accounts for part of that rise. A 100% stack shows shifts in the funding mix that are harder to see in the dollar stack. A single GDP-share line places total spending in the context of the economy.</p>
+<p>Payer shares divide each nominal component by nominal NHE. Applying a common deflator would leave these shares unchanged. The GDP chart divides nominal NHE by the contemporaneous nominal GDP published in the CMS Table 1 summary. That choice reproduces CMS’s published one-decimal GDP shares and avoids a GDP denominator revision mismatch.</p>
+<p><a href="https://www.bea.gov/itable/national-gdp-and-personal-income">BEA National Income and Product Accounts</a> · <a href="https://www.cms.gov/files/zip/nhe-summary-including-share-gdp-cy-1960-2024.zip">CMS summary and GDP series</a></p>
+</section>
+
+<section>
+<h2>Validation and interpretation</h2>
+<p>All 29 annual records use the same source definitions. Each named amount is verified as nonnegative and the five nominal bands reconcile exactly to the detailed CMS total. Other matches the six independently rounded source rows within $2 million in every year, inside a $5.5 million tolerance implied by 11 rounded values. CMS prints a dash for CHIP in 1996 and 1997, before the first expenditure in this vintage. The script explicitly checks those two entries and treats them as zero for the cross-check. It requires numeric values everywhere else. The detailed NHE total also matches the published Table 1 total within its rounding precision. CSV shares and adjusted amounts may differ by a final decimal due to rounding.</p>
+<p>These aggregate series describe spending levels and composition. Evaluating changes in health outcomes, program efficiency, or the effect of policy requires additional evidence. The chart colors are White Oak Research editorial choices. The design reviewed the official Medicare and Medicaid identities for inspiration and uses no program logos or seals. <a href="https://design.cms.gov/components/logos/medicare-logo/?view=guidance">Medicare design system</a> · <a href="https://www.medicaid.gov/style-guide">Medicaid style guide</a></p>
+<p><a href="data/payer-mix.csv" download>Download the annual CSV</a> · <a href="data/payer-mix-validation.json" download>View source rows, checks, and hashes</a></p>
+</section>
+</main>
+<footer><a class="footer-brand" href="../../">White Oak Research</a><span>Rhode Island, USA</span><a href="mailto:rmcconeghy@gmail.com">Let’s talk ↗</a></footer>
+</body>
+</html>

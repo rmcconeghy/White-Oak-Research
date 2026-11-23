@@ -1,0 +1,30 @@
+.mix-study,.mix-methods{max-width:1120px;padding:clamp(32px,6vw,72px) clamp(16px,4vw,42px) 72px}
+.mix-methods{max-width:850px}
+.mix-study h1,.mix-methods h1{font-size:clamp(2.5rem,6vw,4.75rem);max-width:900px;margin:12px 0 18px}
+.mix-study h2,.mix-methods h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.025em}
+.mix-study p,.mix-methods p,.mix-methods ul{max-width:73ch}
+.mix-study .eyebrow{font-size:.75rem;margin:28px 0 0}
+.mix-study .mix-dek{font-size:clamp(1.05rem,2vw,1.32rem);max-width:66ch;margin:0 0 16px}
+.mix-study .mix-period,.mix-study figcaption{color:#465d54;font-size:.9rem}
+.mix-study figure{margin:20px 0 0}
+.mix-study img,.mix-study picture{display:block;width:100%;height:auto}
+.mix-study figcaption{margin-top:9px;max-width:83ch}
+.mix-study section,.mix-methods section{border-top:1px solid var(--line);margin:clamp(36px,6vw,70px) 0 0;padding-top:clamp(24px,4vw,38px)}
+.mix-study a:not(.back),.mix-methods a:not(.back){text-decoration:underline;text-underline-offset:3px}
+.mix-legend{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;padding:0;margin:18px 0 8px;font-size:.9rem;font-weight:600}
+.mix-legend li,.mix-payer{display:flex;gap:8px;align-items:center}
+.mix-swatch{display:inline-block;width:13px;height:13px;flex:none;background:var(--swatch);border:1px solid #465d54}
+.mix-study table{border-collapse:collapse;width:min(100%,720px);font-variant-numeric:tabular-nums;font-size:.93rem}
+.mix-study caption{text-align:left;margin-bottom:8px}
+.mix-study th,.mix-study td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:right}
+.mix-study th:first-child{text-align:left;padding-left:0}
+.mix-study tbody th{font-weight:600}
+.mix-downloads{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;padding:0}
+.mix-methods li{margin:8px 0}
+.mix-methods code{overflow-wrap:anywhere}
+@media(max-width:600px){
+  .mix-study figure{margin-inline:0}
+  .mix-study table{font-size:.85rem}
+  .mix-study th,.mix-study td{padding-inline:4px}
+  .mix-legend{gap:6px 14px}
+}
