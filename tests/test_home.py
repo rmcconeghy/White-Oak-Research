@@ -17,6 +17,7 @@ class HomeTests(unittest.TestCase):
         (self.root / "writing").mkdir()
         shutil.copytree(ROOT / "writing/why-write", self.root / "writing/why-write")
         shutil.copytree(ROOT / "scripts/templates", self.root / "scripts/templates")
+        shutil.copy2(ROOT / "home.css", self.root / "home.css")
         self.original = (self.root / "writing/why-write/index.html").read_text(encoding="utf-8")
 
     def publish_fixture(self, slug, day, title):
@@ -40,6 +41,7 @@ class HomeTests(unittest.TestCase):
         self.assertIn('class="top-analyses"', result)
         self.assertIn('class="primary-visual"', result)
         self.assertIn('class="small-analyses"', result)
+        self.assertRegex(result, r'href="\./home\.css\?v=[0-9a-f]{12}"')
         self.assertIn('href="./writing/why-write/"', result)
         self.assertEqual(result, build(self.root))
         self.assertEqual(self.original, (self.root / "writing/why-write/index.html").read_text(encoding="utf-8"))
@@ -62,6 +64,17 @@ class HomeTests(unittest.TestCase):
         result = build(self.root)
         self.assertNotIn("Ignore", result)
         self.assertNotIn('<p class="essay-summary">', result)
+
+    def test_css_version_changes_with_stylesheet(self):
+        import re
+        first = build(self.root)
+        first_version = re.search(r'home\.css\?v=([0-9a-f]{12})', first).group(1)
+        stylesheet = self.root / "home.css"
+        stylesheet.write_bytes(stylesheet.read_bytes() + b"\n/* test cache invalidation */\n")
+        updated = build(self.root)
+        next_version = re.search(r'home\.css\?v=([0-9a-f]{12})', updated).group(1)
+        self.assertNotEqual(first_version, next_version)
+        self.assertIn('class="top-analyses"', updated)
 
     def test_invalid_publication_date_rejected(self):
         folder = self.root / "writing/broken"
