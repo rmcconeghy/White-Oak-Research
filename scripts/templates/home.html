@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent data analysis and human-written perspectives on healthcare, technology, and public systems by Rob McConeghy.">
+  <meta name="description" content="Independent public data analysis and essays on healthcare, technology, and society from White Oak Research.">
   <title>Making Sense of the Data | White Oak Research</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./research.css">
@@ -25,57 +25,48 @@
     </nav>
   </header>
   <main class="homepage" id="main-content">
-    <div class="home-columns">
-      <section class="home-research" id="analyses" aria-labelledby="research-title">
-        <div class="home-section-head">
-          <h2 id="research-title">Analyses</h2>
+    <section class="top-analyses" id="analyses" aria-label="Featured research">
+      <a class="analysis-tile spending-tile" href="./analyses/us-healthcare-spending/" aria-label="Who pays for American healthcare? View the analysis">
+        <picture class="spending-visual">
+          <source media="(max-width: 620px)" srcset="./analyses/us-healthcare-spending/assets/health-spending-mobile.svg">
+          <img src="./analyses/us-healthcare-spending/assets/health-spending.svg" width="1000" height="574" alt="Chart of changes in U.S. health spending by payer from 1996 through 2024.">
+        </picture>
+        <div class="tile-footer"><span>U.S. healthcare spending</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
+      </a>
+      <a class="analysis-tile primary-tile" href="./analyses/primary-care/" aria-label="Primary care across New England. View the analysis">
+        <div class="primary-visual">
+          <div class="primary-map">
+            <svg viewBox="535 359 365 460" role="img" aria-label="County map of New England showing primary care physician supply"><image href="./primary-care-landscape.png" width="1920" height="1091"></image></svg>
+            <div class="map-scale"><span>Fewer</span><span class="map-gradient" aria-hidden="true"></span><span>More</span></div>
+          </div>
+          <div class="primary-stats">
+            <span class="stats-kicker">NEW ENGLAND</span>
+            <span class="big-stat">14.2</span>
+            <span class="stat-label">PCPs per 10,000 residents</span>
+            <div class="stat-pair"><span>Lowest supply<small>Grand Isle, VT</small></span><strong>4.0</strong></div>
+            <div class="stat-pair"><span>Highest supply<small>Suffolk, MA</small></span><strong>50.5</strong></div>
+            <small class="primary-note">68 counties and county-equivalents · 2024 population</small>
+          </div>
         </div>
-        <a class="featured-analysis" href="./analyses/us-healthcare-spending/">
-          <picture class="featured-visual">
-            <source media="(max-width: 620px)" srcset="./analyses/us-healthcare-spending/assets/health-spending-mobile.svg">
-            <img src="./analyses/us-healthcare-spending/assets/health-spending.svg" width="1000" height="574" alt="Stacked spending visualization showing changes in U.S. healthcare spending by payer, 1996 to 2024.">
-          </picture>
-          <div class="featured-bottom"><span class="card-action">View full analysis <span aria-hidden="true">↗</span></span></div>
+        <div class="tile-footer"><span>Primary care across New England</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
+      </a>
+    </section>
+    <section class="lower-grid" aria-label="Additional research and essays">
+      <div class="small-analyses" aria-label="Other research">
+        <a class="analysis-tile small-tile" href="./analyses/dialysis-transit/" aria-label="Dialysis and public transit analysis">
+          <div class="small-visual"><img src="./analyses/dialysis-transit/dialysis-access.svg" width="1040" height="900" loading="lazy" alt="Map and chart of transit coverage near Rhode Island dialysis facilities."></div>
+          <div class="tile-footer"><span>Dialysis &amp; public transit</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
         </a>
-        <div class="home-section-head more-head">
-          <h2>More analyses</h2>
-        </div>
-        <div class="research-list">
-          <a class="research-card" href="./analyses/primary-care/">
-            <div class="research-thumb primary-care-thumb">
-              <svg viewBox="535 359 365 460" role="img" aria-label="Geographical visualization of primary care physician supply across New England"><image href="./primary-care-landscape.png" width="1920" height="1091"></image></svg>
-            </div>
-            <div class="research-card-copy">
-              <h3>Primary Care Across New England</h3>
-              <p>Where primary care physicians are concentrated—and where communities face lower local supply.</p>
-            </div>
-          </a>
-          <a class="research-card" href="./analyses/dialysis-transit/">
-            <div class="research-thumb"><img src="./analyses/dialysis-transit/dialysis-access.svg" loading="lazy" width="1040" height="900" alt="Map and data summary of bus service near Rhode Island dialysis clinics."></div>
-            <div class="research-card-copy">
-              <h3>Dialysis &amp; Public Transit</h3>
-              <p>Can patients reach dialysis appointments by bus early enough for morning treatment?</p>
-            </div>
-          </a>
-          <a class="research-card" href="./analyses/public-healthcare-scale/">
-            <div class="research-thumb"><img src="./analyses/public-healthcare-scale/assets/spending-four-panel.svg" loading="lazy" width="1200" height="850" alt="Four-panel chart comparing Medicare, Medicaid, and VA healthcare spending."></div>
-            <div class="research-card-copy">
-              <h3>Public Healthcare at Scale</h3>
-              <p>Putting Medicare, Medicaid, and VA healthcare spending in context: scale, growth, and GDP share.</p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <aside class="home-sidebar" aria-labelledby="sidebar-writing-title">
-        <div class="home-section-head sidebar-head">
-          <h2 id="sidebar-writing-title">Writing</h2>
-        </div>
-        <div class="writing-previews">
-          {{ESSAY_PREVIEWS}}
-        </div>
-        <a class="sidebar-more" href="./writing/">Read all essays <span aria-hidden="true">↗</span></a>
+        <a class="analysis-tile small-tile" href="./analyses/public-healthcare-scale/" aria-label="Medicare, Medicaid and VA health spending analysis">
+          <div class="small-visual"><img src="./analyses/public-healthcare-scale/assets/spending-four-panel.svg" width="1200" height="850" loading="lazy" alt="Four charts comparing Medicare, Medicaid, and VA healthcare spending from 1996 through 2024."></div>
+          <div class="tile-footer"><span>Public healthcare at scale</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div>
+      <aside class="essay-panel" aria-label="Recent essays">
+        <div class="essay-panel-head"><h2>Recent essays</h2><a href="./writing/">See all <span aria-hidden="true">↗</span></a></div>
+        <div class="writing-previews">{{ESSAY_PREVIEWS}}</div>
       </aside>
-    </div>
+    </section>
     <section class="home-earlier" aria-labelledby="earlier-title">
       <div class="earlier-head"><h2 id="earlier-title">Earlier research &amp; teaching</h2></div>
       <div class="earlier-grid">
