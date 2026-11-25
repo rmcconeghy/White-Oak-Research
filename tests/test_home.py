@@ -39,7 +39,7 @@ class HomeTests(unittest.TestCase):
         self.assertNotIn('<h2 id="sidebar-writing-title">Writing</h2>', result)
         self.assertEqual(result.count('class="analysis-tile'), 4)
         self.assertIn('class="top-analyses"', result)
-        self.assertIn('class="primary-visual"', result)
+        self.assertIn('class="tile-chart map-layout primary-visual"', result)
         self.assertNotIn('class="small-analyses"', result)
         self.assertEqual(result.count('class="tile-heading"'), 4)
         self.assertEqual(result.count('class="tile-caption"'), 4)
