@@ -8,8 +8,8 @@
   <title>Making Sense of the Data | White Oak Research</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./research.css">
-  <link rel="stylesheet" href="./home.css?v=540d59478c49">
-  <link rel="preload" as="image" href="./analyses/us-healthcare-spending/assets/health-spending.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./home.css?v=2aa70d2d4552">
+  <script type="module" src="./home-charts.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -27,48 +27,70 @@
   </header>
   <main class="homepage" id="main-content">
     <section class="top-analyses" id="analyses" aria-label="Featured research">
-      <a class="analysis-tile spending-tile" href="./analyses/us-healthcare-spending/" aria-label="Who pays for American healthcare? View the analysis">
-        <picture class="spending-visual">
-          <source media="(max-width: 620px)" srcset="./analyses/us-healthcare-spending/assets/health-spending-mobile.svg">
-          <img src="./analyses/us-healthcare-spending/assets/health-spending.svg" width="1000" height="574" alt="Chart of changes in U.S. health spending by payer from 1996 through 2024.">
-        </picture>
-        <div class="tile-footer"><span>U.S. healthcare spending</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
+      <a class="analysis-tile" href="./analyses/us-healthcare-spending/">
+        <div class="tile-heading">
+          <h2>U.S. healthcare spending</h2><span class="tile-arrow" aria-hidden="true"></span>
+          <p>National spending, 1996–2024 · trillions of 2024 dollars</p>
+        </div>
+        <div class="tile-chart spending-chart" data-chart="spending" role="img" aria-label="Stacked area chart of U.S. health spending by payer."><span class="chart-loading">Loading spending chart…</span></div>
+        <div class="tile-caption">Source: CMS National Health Expenditure Accounts · BEA GDP deflator</div>
       </a>
-      <a class="analysis-tile primary-tile" href="./analyses/primary-care/" aria-label="Primary care across New England. View the analysis">
-        <div class="primary-visual">
-          <div class="primary-map">
-            <svg viewBox="535 359 365 460" role="img" aria-label="County map of New England showing primary care physician supply"><image href="./primary-care-landscape.png" width="1920" height="1091"></image></svg>
-            <div class="map-scale"><span>Fewer</span><span class="map-gradient" aria-hidden="true"></span><span>More</span></div>
-          </div>
-          <div class="primary-stats">
-            <span class="stats-kicker">NEW ENGLAND</span>
-            <span class="big-stat">14.2</span>
+      <a class="analysis-tile" href="./analyses/primary-care/">
+        <div class="tile-heading">
+          <h2>Primary care across New England</h2><span class="tile-arrow" aria-hidden="true"></span>
+          <p>Physician supply across 68 counties and county-equivalents</p>
+        </div>
+        <div class="tile-chart map-layout primary-visual">
+          <svg class="map-graphic" viewBox="535 359 365 460" role="img" aria-label="County map of New England showing primary care physician supply"><image href="./primary-care-landscape.png" width="1920" height="1091"/></svg>
+          <div class="map-aside">
+            <strong class="big-stat">14.2</strong>
             <span class="stat-label">PCPs per 10,000 residents</span>
-            <div class="stat-pair"><span>Lowest supply<small>Grand Isle, VT</small></span><strong>4.0</strong></div>
-            <div class="stat-pair"><span>Highest supply<small>Suffolk, MA</small></span><strong>50.5</strong></div>
-            <small class="primary-note">68 counties and county-equivalents · 2024 population</small>
+            <div class="map-scale"><span>Fewer</span><span class="map-gradient" aria-hidden="true"></span><span>More</span></div>
+            <span class="chart-note">Scale capped at 20.8</span>
           </div>
         </div>
-        <div class="tile-footer"><span>Primary care across New England</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
+        <div class="tile-caption">Source: NPPES · 2024 ACS · 2025 Census TIGER/Line</div>
+      </a>
+      <a class="analysis-tile" href="./analyses/dialysis-transit/">
+        <div class="tile-heading">
+          <h2>Dialysis &amp; public transit</h2><span class="tile-arrow" aria-hidden="true"></span>
+          <p>Tiverton and Westerly: no early trips within 800 m on either study day</p>
+        </div>
+        <div class="tile-chart map-layout">
+          <div class="map-graphic dialysis-map" data-chart="dialysis" role="img" aria-label="Rhode Island map with 16 dialysis clinics and RIPTA stops; Tiverton and Westerly highlighted."><span class="chart-loading">Loading clinic map…</span></div>
+          <div class="map-aside dialysis-key">
+            <span class="gap-label"><i></i>Tiverton</span><span class="gap-label"><i></i>Westerly</span>
+            <span class="clinic-label"><i></i>Other clinics</span><span class="stop-label"><i></i>RIPTA stops</span>
+            <span class="chart-note">5–8 a.m. · Nov. 17 &amp; 21, 2026</span>
+          </div>
+        </div>
+        <div class="tile-caption">Source: CMS dialysis facilities · RIPTA · U.S. Census</div>
+      </a>
+      <a class="analysis-tile" href="./analyses/public-healthcare-scale/">
+        <div class="tile-heading">
+          <h2>Public healthcare at scale</h2><span class="tile-arrow" aria-hidden="true"></span>
+          <p>Latest common year · 2024 spending in billions of dollars</p>
+        </div>
+        <div class="tile-chart public-chart" role="img" aria-label="2024 spending: Medicare 1,118 billion dollars, Medicaid 932 billion, VA healthcare 118 billion.">
+          <div class="public-row"><span>Medicare</span><div class="public-track"><span class="public-bar medicare" style="--share:93.1666667%"></span></div><strong>$1,118bn</strong></div>
+          <div class="public-row"><span>Medicaid</span><div class="public-track"><span class="public-bar medicaid" style="--share:77.641%"></span></div><strong>$932bn</strong></div>
+          <div class="public-row"><span>VA healthcare</span><div class="public-track"><span class="public-bar va" style="--share:9.7983333%"></span></div><strong>$118bn</strong></div>
+          <div class="public-axis"><span></span><div><span>0</span><span>300</span><span>600</span><span>900</span><span>1200</span></div><span></span></div>
+        </div>
+        <div class="tile-caption">Source: CMS National Health Expenditure Accounts</div>
       </a>
     </section>
-    <section class="lower-grid" aria-label="Additional research and essays">
-      <div class="small-analyses" aria-label="Other research">
-        <a class="analysis-tile small-tile" href="./analyses/dialysis-transit/" aria-label="Dialysis and public transit analysis">
-          <div class="small-visual"><img src="./analyses/dialysis-transit/dialysis-access.svg" width="1040" height="900" loading="lazy" alt="Map and chart of transit coverage near Rhode Island dialysis facilities."></div>
-          <div class="tile-footer"><span>Dialysis &amp; public transit</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
-        </a>
-        <a class="analysis-tile small-tile" href="./analyses/public-healthcare-scale/" aria-label="Medicare, Medicaid and VA health spending analysis">
-          <div class="small-visual"><img src="./analyses/public-healthcare-scale/assets/spending-four-panel.svg" width="1200" height="850" loading="lazy" alt="Four charts comparing Medicare, Medicaid, and VA healthcare spending from 1996 through 2024."></div>
-          <div class="tile-footer"><span>Public healthcare at scale</span><span class="tile-arrow" aria-hidden="true">↗</span></div>
-        </a>
-      </div>
+    <section class="home-essays" aria-label="Recent writing">
       <aside class="essay-panel" aria-label="Recent essays">
         <div class="essay-panel-head"><h2>Recent essays</h2><a href="./writing/">See all <span aria-hidden="true">↗</span></a></div>
         <div class="writing-previews"><article class="essay-preview essay-preview--latest">
+  <time datetime="2026-11-23">November 23, 2026</time>
+  <h3><a href="./writing/prior-authorizations-and-ai/">3. Prior Authorizations and AI</a></h3>
+  <a class="card-action" href="./writing/prior-authorizations-and-ai/">Read essay <span aria-hidden="true">↗</span></a>
+</article>
+<article class="essay-preview">
   <time datetime="2026-11-18">November 18, 2026</time>
   <h3><a href="./writing/ai-for-data-analytics/">2. AI for Data Analytics</a></h3>
-  <a class="card-action" href="./writing/ai-for-data-analytics/">Read essay <span aria-hidden="true">↗</span></a>
 </article>
 <article class="essay-preview">
   <time datetime="2026-11-17">November 17, 2026</time>
