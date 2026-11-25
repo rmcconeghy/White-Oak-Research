@@ -1,0 +1,45 @@
+name: Homepage visual checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'home.css'
+      - 'home-charts.js'
+      - 'scripts/templates/home.html'
+      - 'scripts/capture_home.mjs'
+      - '.github/workflows/home-visual.yml'
+permissions:
+  contents: read
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare before and after sites
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add --detach "$RUNNER_TEMP/home-before" "$BASE_SHA"
+          python "$RUNNER_TEMP/home-before/scripts/build_home.py"
+          python scripts/build_home.py
+          python -m unittest discover -s tests -v
+          python -m http.server 8765 --directory "$RUNNER_TEMP/home-before" > /tmp/wor-before.log 2>&1 &
+          python -m http.server 8766 --directory "$GITHUB_WORKSPACE" > /tmp/wor-after.log 2>&1 &
+      - name: Install browser driver
+        run: npm install --no-save --package-lock=false playwright
+      - name: Capture and verify
+        run: node scripts/capture_home.mjs
+      - name: Upload screenshots and measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-before-after
+          path: screenshots/
