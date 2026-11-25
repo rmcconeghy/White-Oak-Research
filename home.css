@@ -1,4 +1,4 @@
-/* Editorial homepage: lead with two charts; keep individual essays and studies unchanged. */
+/* Editorial homepage: shared four-tile system; full research pages remain unchanged. */
 .home-header,.home-footer,.homepage{width:min(100%,1536px);max-width:none;margin-inline:auto}
 .home-header{padding:16px clamp(20px,3.5vw,54px);display:grid;grid-template-columns:minmax(210px,1fr) auto minmax(240px,1fr);align-items:center;gap:20px;border-bottom:1px solid var(--line)}
 .home-header .header-title{font:400 clamp(22px,2.15vw,32px)/1.2 'Libre Caslon Display',Georgia,serif;letter-spacing:-.5px;text-align:center;white-space:nowrap;color:var(--green);margin:0}
@@ -10,32 +10,64 @@
 .homepage a:focus-visible,.home-header a:focus-visible,.home-footer a:focus-visible{outline:3px solid #a88942;outline-offset:4px}
 .skip-link{position:absolute;top:-100px;left:12px;background:var(--green);color:#fff;padding:10px 18px;z-index:10}
 .skip-link:focus{top:12px}
-.top-analyses{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:stretch}
-.analysis-tile{display:flex;flex-direction:column;min-width:0;border:1px solid #cfd8ca;background:#fffefa;border-radius:11px;overflow:hidden;transition:border-color .18s,box-shadow .18s,transform .18s}
+
+/* Shared chart tokens. The blue-teal ramp matches the original county raster. */
+:root {
+  --chart-private:#365677;
+  --chart-medicare:var(--green);
+  --chart-medicaid:#78a58a;
+  --chart-pocket:#b4ced8;
+  --chart-other:#a9adb0;
+  --chart-va:#527995;
+  --chart-highlight:#a0442b;
+  --chart-stop:#70918b;
+  --chart-land:#e8e7dd;
+  --chart-boundary:#bbc3ba;
+  --chart-road:#fcfaf0;
+  --chart-water:#fffefa;
+  --chart-ramp-1:#dce8e8;
+  --chart-ramp-2:#afc5c9;
+  --chart-ramp-3:#7699a3;
+  --chart-ramp-4:#185168;
+  --chart-grid:#d9dfd8;
+  --chart-font:'DM Sans',Arial,sans-serif;
+}
+.top-analyses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.analysis-tile{display:grid;grid-template-rows:minmax(62px,auto) minmax(0,1fr) auto;gap:8px;min-width:0;height:clamp(320px,30vw,420px);padding:16px;border:1px solid #cfd8ca;background:#fffefa;border-radius:11px;transition:border-color .18s,box-shadow .18s,transform .18s}
 .analysis-tile:hover,.earlier-grid a:hover{border-color:#8ba38e;box-shadow:0 10px 28px #244f3d15;transform:translateY(-2px)}
-.spending-visual{display:flex;flex:1;align-items:center;justify-content:center;min-width:0;padding:8px}
-.spending-visual img{display:block;width:100%;height:auto;object-fit:contain}
-.tile-footer{margin-top:auto;min-height:54px;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e3e9df;font:600 15px/1.35 'DM Sans',Arial,sans-serif;letter-spacing:-.2px}
-.tile-arrow{color:#52715b;font-size:19px;flex:none}
-.primary-visual{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,.8fr);flex:1;align-items:center;gap:14px;padding:18px 22px 15px;background:#fbfcf8}
-.primary-map{min-width:0;max-width:300px;margin:auto;display:flex;flex-direction:column;align-items:stretch;gap:11px}
-.primary-map svg{width:100%;height:auto;display:block;max-height:365px}
-.map-scale{display:flex;align-items:center;gap:8px;font-size:11px;color:#596e66}
-.map-gradient{display:block;flex:1;height:10px;border:1px solid #b6c9c9;border-radius:20px;background:linear-gradient(90deg,#dce8e8,#afc5c9,#7699a3,#185168)}
-.primary-stats{display:flex;flex-direction:column;align-items:start;min-width:0;color:var(--ink)}
-.stats-kicker{font:700 10px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:1.2px;color:#617c71}
-.big-stat{font:400 clamp(37px,4vw,58px)/1.06 'Libre Caslon Display',Georgia,serif;color:#185168;margin:3px 0}
-.stat-label{font:500 13px/1.5 'DM Sans',Arial,sans-serif;color:#4f645a;margin-bottom:20px}
-.stat-pair{display:flex;justify-content:space-between;align-items:baseline;gap:10px;width:100%;border-top:1px solid #dbe4dc;padding:10px 0;font:600 12px/1.4 'DM Sans',Arial,sans-serif}
-.stat-pair span{min-width:0}
-.stat-pair small{display:block;font-size:11px;font-weight:400;color:#627168;margin-top:3px}
-.stat-pair strong{font-size:20px;color:#185168;font-weight:600}
-.primary-note{font-size:10px;line-height:1.5;color:#718074;margin-top:9px}
-.lower-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(285px,.8fr);gap:18px;align-items:start;margin-top:18px}
-.small-analyses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.small-visual{display:flex;align-items:center;justify-content:center;min-height:240px;aspect-ratio:1.35;background:#fbfcf9;padding:12px}
-.small-visual img{display:block;width:100%;height:100%;max-height:340px;object-fit:contain}
-.small-tile .tile-footer{font-size:14px}
+.tile-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:start;align-items:center;gap:3px 12px}
+.homepage .tile-heading h2{font:400 clamp(24px,2.1vw,31px)/1.12 'Libre Caslon Display',Georgia,serif;letter-spacing:-.45px;color:var(--green)}
+.tile-heading p{grid-column:1/-1;font:400 12px/1.4 var(--chart-font);color:var(--muted);margin:0}
+.tile-heading .tile-arrow{color:var(--green);justify-self:end;flex:none}
+.tile-caption{font:400 11px/1.35 var(--chart-font);color:var(--muted);margin:0}
+.tile-chart{min-height:0;min-width:0;font:400 12px/1.4 var(--chart-font);color:var(--ink)}
+.tile-chart svg{display:block;width:100%;height:100%;overflow:hidden}
+.spending-chart{position:relative}
+.chart-loading{display:grid;place-items:center;height:100%;color:var(--muted)}
+.map-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.75fr);align-items:center;gap:16px}
+.map-graphic{width:100%;height:100%;min-height:0;min-width:0}
+.map-aside{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.big-stat{font:600 clamp(37px,5vw,62px)/1 var(--chart-font);letter-spacing:-2px;color:var(--green)}
+.stat-label{font:500 13px/1.4 var(--chart-font)}
+.map-scale{display:flex;align-items:center;gap:6px;width:100%;max-width:180px;font-size:11px;margin-top:9px}
+.map-gradient{display:block;flex:1;height:8px;background:linear-gradient(90deg,var(--chart-ramp-1),var(--chart-ramp-2),var(--chart-ramp-3),var(--chart-ramp-4))}
+.chart-note{font:400 11px/1.35 var(--chart-font);color:var(--muted)}
+.dialysis-key{gap:9px}
+.dialysis-key>span:not(.chart-note){display:flex;align-items:center;gap:7px}
+.dialysis-key i{display:block;width:9px;height:9px;border-radius:50%;background:var(--chart-medicare);flex:none}
+.dialysis-key .gap-label{color:var(--chart-highlight);font-weight:700}
+.dialysis-key .gap-label i{background:var(--chart-highlight)}
+.dialysis-key .stop-label i{background:var(--chart-stop);width:5px;height:5px;margin:2px}
+.public-chart{display:grid;align-content:center;gap:clamp(14px,2vw,25px)}
+.public-row,.public-axis{display:grid;grid-template-columns:minmax(80px,110px) minmax(0,1fr) minmax(55px,78px);align-items:center;gap:8px}
+.public-row>strong{font-weight:700;text-align:right;white-space:nowrap}
+.public-track{height:clamp(22px,3vw,38px);background:repeating-linear-gradient(to right,var(--chart-grid) 0 1px,transparent 1px 25%);border:0}
+.public-bar{display:block;height:100%;width:var(--share);background:var(--chart-medicare)}
+.public-bar.medicaid{background:var(--chart-medicaid)}
+.public-bar.va{background:var(--chart-va)}
+.public-axis{font-size:11px;color:var(--muted);margin-top:-9px}
+.public-axis>div{display:flex;justify-content:space-between;gap:2px}
+.home-essays{margin-top:30px;border-top:1px solid var(--line);padding-top:22px}
 .essay-panel{min-width:0;border:1px solid #cfd8ca;border-radius:11px;background:#fffefa;overflow:hidden}
 .essay-panel-head{padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #e3e9df}
 .homepage .essay-panel-head h2{font:400 25px/1.2 'Libre Caslon Display',Georgia,serif;letter-spacing:-.3px;margin:0}
@@ -57,26 +89,26 @@
 .homepage .earlier-grid h3{font:500 18px/1.3 'DM Sans',sans-serif;letter-spacing:-.4px;margin:0 0 10px}
 .earlier-grid p{font-size:13px;line-height:1.55;color:#677568;margin:0}
 .home-footer{padding:24px clamp(20px,3.5vw,54px) 36px;border-top:1px solid var(--line)}
+
+/* Essays have their own full-width row; no competition with chart cards. */
+.essay-panel{border:0;background:transparent;border-radius:0;overflow:visible}
+.essay-panel-head{padding:0 0 14px;border:0}
+.writing-previews{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.essay-preview,.essay-preview:last-child{padding:16px;border:1px solid #d4ded2;border-radius:10px;background:#fffefa}
+.essay-preview--latest{background:#eaf0e6}
 @media(max-width:1200px){
  .home-header{grid-template-columns:minmax(180px,1fr) auto minmax(200px,1fr);gap:14px}
  .home-header nav a{padding:7px 10px}
- .primary-visual{grid-template-columns:minmax(0,1fr) minmax(155px,.8fr);gap:9px;padding:12px}
- .primary-map svg{max-height:320px}
- .stat-label{margin-bottom:8px}
- .stat-pair{padding:7px 0}
- .primary-note{display:none}
- .lower-grid{grid-template-columns:minmax(0,1.6fr) minmax(270px,.8fr)}
- .small-visual{min-height:180px}
+ .analysis-tile{padding:14px}
 }
 @media(max-width:940px){
  .home-header{grid-template-columns:minmax(0,1fr) auto}
  .home-header .header-title{grid-column:1/-1;grid-row:2;justify-self:start;font-size:26px}
  .home-header nav{grid-column:2;grid-row:1}
+}
+@media(max-width:899px){
  .top-analyses{grid-template-columns:1fr}
- .primary-visual{grid-template-columns:minmax(0,1fr) minmax(200px,.65fr);gap:22px;padding:20px}
- .primary-map svg{max-height:400px}
- .lower-grid{grid-template-columns:1fr}
- .small-visual{min-height:210px}
+ .analysis-tile{height:clamp(330px,60vw,420px)}
 }
 @media(max-width:650px){
  .home-header{padding:14px 18px;gap:8px}
@@ -86,24 +118,13 @@
  .home-header nav a{padding:7px 12px;font-size:13px}
  .home-header .header-title{grid-row:2;font-size:24px;white-space:normal}
  .homepage{padding:14px 15px 50px}
- .top-analyses,.lower-grid,.small-analyses{gap:12px}
- .lower-grid{margin-top:12px}
- .spending-visual{padding:5px}
- .primary-visual{grid-template-columns:minmax(0,1fr) minmax(125px,.7fr);gap:8px;padding:10px}
- .primary-map svg{max-height:260px}
- .map-scale{font-size:9px;gap:4px}
- .map-gradient{height:7px}
- .big-stat{font-size:36px}
- .stat-label{font-size:11px;line-height:1.3;margin-bottom:7px}
- .stats-kicker{font-size:9px}
- .stat-pair{font-size:10px;gap:6px;padding:6px 0}
- .stat-pair strong{font-size:16px}
- .stat-pair small{font-size:9px}
- .tile-footer{min-height:45px;padding:10px 13px;font-size:13px}
- .small-analyses{grid-template-columns:1fr}
- .small-visual{min-height:210px;aspect-ratio:1.55}
+ .top-analyses{gap:12px}
+ .analysis-tile{padding:12px;grid-template-rows:minmax(68px,auto) minmax(0,1fr) auto}
+ .map-layout{gap:10px}
+ .public-row,.public-axis{grid-template-columns:78px minmax(0,1fr) 64px;gap:5px}
+ .public-axis{font-size:11px}
  .home-earlier{margin-top:42px}
- .earlier-grid{grid-template-columns:1fr;gap:12px}
+ .earlier-grid,.writing-previews{grid-template-columns:1fr;gap:12px}
  .home-footer{padding:22px 18px 30px}
 }
 @media(prefers-reduced-motion:reduce){
