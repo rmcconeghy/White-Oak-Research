@@ -58,11 +58,13 @@
 .dialysis-key .gap-label{color:var(--chart-highlight);font-weight:700}
 .dialysis-key .gap-label i{background:var(--chart-highlight)}
 .dialysis-key .stop-label i{background:var(--chart-stop);width:5px;height:5px;margin:2px}
-.public-chart{display:grid;align-content:center;gap:clamp(14px,2vw,25px)}
+.public-chart{display:grid;align-content:center;gap:clamp(5px,1vw,10px)}
 .public-row,.public-axis{display:grid;grid-template-columns:minmax(80px,110px) minmax(0,1fr) minmax(55px,78px);align-items:center;gap:8px}
 .public-row>strong{font-weight:700;text-align:right;white-space:nowrap}
-.public-track{height:clamp(22px,3vw,38px);background:repeating-linear-gradient(to right,var(--chart-grid) 0 1px,transparent 1px 25%);border:0}
+.public-track{height:clamp(18px,2vw,26px);background:repeating-linear-gradient(to right,var(--chart-grid) 0 1px,transparent 1px 25%);border:0}
 .public-bar{display:block;height:100%;width:var(--share);background:var(--chart-medicare)}
+.public-bar.private{background:var(--chart-private)}
+.public-bar.pocket{background:var(--chart-pocket)}
 .public-bar.medicaid{background:var(--chart-medicaid)}
 .public-bar.va{background:var(--chart-va)}
 .public-axis{font-size:11px;color:var(--muted);margin-top:-9px}
@@ -121,7 +123,7 @@
  .top-analyses{gap:12px}
  .analysis-tile{padding:12px;grid-template-rows:minmax(68px,auto) minmax(0,1fr) auto}
  .map-layout{gap:10px}
- .public-row,.public-axis{grid-template-columns:78px minmax(0,1fr) 64px;gap:5px}
+ .public-row,.public-axis{grid-template-columns:95px minmax(0,1fr) 64px;gap:5px}
  .public-axis{font-size:11px}
  .home-earlier{margin-top:42px}
  .earlier-grid,.writing-previews{grid-template-columns:1fr;gap:12px}
